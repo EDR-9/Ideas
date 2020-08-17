@@ -1,2 +1,2 @@
 # Ideas
-Small programming ideas
+Programming ideas
