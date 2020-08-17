@@ -1,0 +1,32 @@
+/* Integración Montecarlo de exp(-x) sobre el intervalo (0, 1) */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
+
+int main(void)
+{
+  int i, n = 0, ciclos; 
+  double r1, r2, y, F, integral;
+  srand(time(NULL));
+  printf("Cantidad de ciclos: ");
+  scanf("%d", &ciclos);
+  
+  for(i = 0; i < ciclos; i++) {
+     
+     r1 = (double) (rand() % 1000000)/1000000;  //número aleatorio entre 0 y 1
+     y = exp(-r1);
+     r2 = (double) (rand() % 1000000)/1000000;
+     //printf("%lf, %lf, %lf\n", r1, y, r2);
+     if(r2 <= y) {
+        
+        n++;
+     }
+  }
+  F = (double) n/ciclos;
+  integral = F * exp(0.0) * (1 - 0);
+  printf("Valor aproximado de la integral en (0, 1): %lf", integral);
+  
+  return 0;
+}
