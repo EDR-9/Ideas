@@ -1,0 +1,49 @@
+/* Multiplicación de una matriz A por un vector x cuyo resultado es y = Ax */
+
+#include <stdio.h>
+
+int main(void) {
+  
+  int i, j, fil, col;
+
+  printf("Número de filas: ");
+  scanf("%d", &fil);
+  printf("Número de columnas: ");
+  scanf("%d", &col); printf("\n");
+  int A[fil][col], x[col][1], y = 0;
+  printf("Ingresa los elementos de la matriz A: ");
+  
+  for(i = 0; i < fil; i++) {
+     
+     for(j = 0; j < col; j++) {
+        
+        scanf("%d", &A[i][j]);
+        printf("\t%d", A[i][j]);
+     }
+     printf("\n");
+  }
+  printf("Ingresa las componentes del vector x: ");
+  
+  for(i = 0; i < col; i++) {
+     
+     for(j = 0; j < 1; j++) {
+        
+        scanf("%d", &x[i][j]);
+        printf("\t%d", x[i][j]);
+     }
+     printf("\n");
+  }
+  printf("El vector resultante y = Ax es:\n");
+  
+  for(i = 0; i < fil; i++) {
+     
+     for(j = 0; j < col; j++) {
+        
+        y += A[i][j] * x[j][0];
+     }
+     printf("\t%d", y);
+     printf("\n");
+     y = 0;
+  }
+  return 0;
+}
