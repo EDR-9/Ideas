@@ -39,7 +39,6 @@ int main(void) {
      
      des = arreglo[i] - med;
      sqr += pow(des, 2)/num;
-     //printf("%lf\n", dst);
   }
   dst = pow(sqr, 0.5);
   printf("Desviación estándar: %lf\n", dst);
