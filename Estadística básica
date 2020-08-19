@@ -3,7 +3,7 @@
 
 int main(void) {
   
-  int i, num;
+  int i, j, num;
   double sum = 0, med, des, sqr = 0, dst;
   printf("Cantidad de datos: ");
   scanf("%d", &num);
@@ -21,10 +21,10 @@ int main(void) {
      sum += arreglo[i];
   }
   printf("Suma: %lf\n", sum);
-  // MEDIA
+  // MEDIA ARITMÉTICA
   
   med = sum/num; 
-  printf("Media: %lf\n", med);
+  printf("Media aritmética: %lf\n", med);
   // DESVIACIÓN RESPECTO A LA MEDIA
   
   printf("Desviación con respecto a la media:\n");
@@ -45,20 +45,25 @@ int main(void) {
   printf("Desviación estándar: %lf\n", dst);
   // MÁXIMO Y MÍNIMO
 
-  double sw, x, y, ord[num];
-  printf("Lista Ordenada:\n");
+  double sw;
+  printf("Conjunto Ordenado:\n");
+  
+  for(i = 0; i < num - 1; i++) {
+     
+     for(j = 0; j < num - 1; j++) {
+     
+        if(arreglo[j + 1] < arreglo[j]) {
+        
+           sw = arreglo[j];
+           arreglo[j] = arreglo[j + 1];
+           arreglo[j + 1] = sw;
+        }
+     }
+  }
   for(i = 0; i < num; i++) {
      
-     if(arreglo[i+1] < arreglo[i]) {
-        
-        sw = arreglo[i+1];
-        arreglo[i+1] = arreglo[i];
-        arreglo[i] = sw;
-        printf("%lf\n", arreglo[i]);
-     }
-     else if()
-        printf("%lf\n", arreglo[i]);
+     printf("%lf\n", arreglo[i]);
   }
-  printf("Máximo: %lf\nMínimo: %lf\n", ord[num-1], ord[0]);
+  printf("Máximo: %lf\nMínimo: %lf\n", arreglo[num-1], arreglo[0]);
   return 0;
 }
