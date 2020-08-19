@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+  
+  int i, num;
+  double sum = 0, med, des, sqr = 0, dst;
+  printf("Cantidad de datos: ");
+  scanf("%d", &num);
+  double arreglo[num];
+  printf("Conjunto de datos: ");
+  for(i = 0; i < num; i++) { 
+     
+     scanf("%lf", &arreglo[i]);
+     printf("%lf\n", arreglo[i]);
+  }
+  // SUMA
+  
+  for(i = 0; i < num; i++) {
+     
+     sum += arreglo[i];
+  }
+  printf("Suma: %lf\n", sum);
+  // MEDIA
+  
+  med = sum/num; 
+  printf("Media: %lf\n", med);
+  // DESVIACIÓN RESPECTO A LA MEDIA
+  
+  printf("Desviación con respecto a la media:\n");
+  for(i = 0; i < num; i++) {
+     
+     des = arreglo[i] - med;
+     printf("%lf\n", des);
+  }
+  // DESVIACIÓN ESTÁNDAAR S = sqrt(sum (d_i^2)/n), i = 1,2,...,n
+  
+  for(i = 0; i < num; i++) {
+     
+     des = arreglo[i] - med;
+     sqr += pow(des, 2)/num;
+     //printf("%lf\n", dst);
+  }
+  dst = pow(sqr, 0.5);
+  printf("Desviación estándar: %lf\n", dst);
+  // MÁXIMO Y MÍNIMO
+
+  double sw, x, y, ord[num];
+  printf("Lista Ordenada:\n");
+  for(i = 0; i < num; i++) {
+     
+     if(arreglo[i+1] < arreglo[i]) {
+        
+        sw = arreglo[i+1];
+        arreglo[i+1] = arreglo[i];
+        arreglo[i] = sw;
+        printf("%lf\n", arreglo[i]);
+     }
+     else if()
+        printf("%lf\n", arreglo[i]);
+  }
+  printf("Máximo: %lf\nMínimo: %lf\n", ord[num-1], ord[0]);
+  return 0;
+}
