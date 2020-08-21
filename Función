@@ -1,0 +1,30 @@
+/* Valores de las funciones a exp(bt) sen(ct) y b exp(bt) cos(ct) */
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+   
+   int i, num;
+   double inf, sup, a, b, c, t , sen, cse;
+
+   printf("Ingres las constantes: ");
+   scanf("%lf", &a);
+   scanf("%lf", &b);
+   scanf("%lf", &c);
+   printf("Límite inferior del intervalo: ");
+   scanf("%lf", &inf);
+   printf("Límite superior del intervalo: ");
+   scanf("%lf", &sup);
+   printf("Canridad de ciclos: ");
+   scanf("%d", &num);
+
+   for(i = 0; i < num + 1; i++) {
+      
+      t = inf + ((sup - inf)/num)*i;
+      sen = a*exp(b*t)*sin(c*t);
+      cse = a*exp(b*t)*cos(c*t);
+      printf("%lf  %lf  %lf\n", t, sen, cse);
+   }
+   return 0;
+}
