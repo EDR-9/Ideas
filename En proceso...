@@ -33,23 +33,37 @@ int main(void) {
      
      for(j = 0; j < 11; j++) {
         
-        if(!(strcmp(test[i], monedas[j]))) {
+        if(!strcmp(test[i], monedas[j])) {
            
            señal++;
         }
      }
   }
-  printf("%d", señal);
-  if(señal > 0)
-     conversion(test[i], monedas[j]);
+  //printf("%d", señal);
+  if(señal > 0) {
+     
+     conversion(test[0], test[1]);
+     /*for(i = 0; i < 2; i++) {
+        
+        for(j = 0; j < 11; j++) {
+           
+           conversion(test[i], monedas[j]);
+        }
+     }*/
+  }
 
   return 0;
 }
 void conversion(char x[], char y[]) {
 
   int i;
+  float D, P;
   char money[][21] = {"Dolar","Dolar_CAN","Euro","Florin","Franco_SUI","Libra","Peso_MEX","Yen","Rublo","Peso_COL","Rupia"};
   //
-  printf("%s, %s", x, y);
+  if(strcmp(x, "Dolar") == 0 && strcmp(y, "Peso_MEX") == 0) {
+     
+     printf("Un dólar equivale a %f pesos mexicanos", 1/0.046386);
+  }
+  //printf("%s, %s", x, y);
 
 }
