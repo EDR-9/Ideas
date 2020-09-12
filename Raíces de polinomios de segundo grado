@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <math.h>
+#include <complex.h>
+
+void quadratic(double *);
+
+int main() {
+  
+  double q[3];
+  int n;
+  printf("Coeficientes del polinomio (a, b y c): ");
+  
+  for(n = 0; n < 3; n++) { //a = q[0], b = q[1] y c = q[2]
+  
+     scanf("%lf", &q[n]);
+  }
+  quadratic(q);
+  
+  return 0;
+}
+void quadratic(double *x)
+{
+  double r1, r2;
+
+  r1 = (-x[1] + sqrt(pow(x[1], 2) - 4*x[0]*x[2]))/(2*x[0]);
+  r2 = (-x[1] - sqrt(pow(x[1], 2) - 4*x[0]*x[2]))/(2*x[0]);
+
+  if(pow(x[1], 2) - 4*x[0]*x[2] >= 0) {
+    
+     if(r1 == r2) {
+        
+        printf("Existe multiplicidad de raíces. Ambas son igual a %lf", r1);
+     }
+     else
+        printf("Las raíces del polinomio son reales y diferentes, %lf y %lf", r1, r2);
+  }
+  if(pow(x[1], 2) - 4*x[0]*x[2] < 0) {
+     
+     double complex z = csqrt(pow(x[1], 2) - 4*x[0]*x[2]);
+     double im = cimag(z);
+     double complex z1;
+     double complex z2;
+
+     z1 = (-x[1] + z)/(2*x[0]);
+     z2 = (-x[1] - z)/(2*x[0]);
+     printf("Las raíces del polinomio son complejas:\n%lf+%lfi y %lf%lfi", creal(z1), cimag(z1), creal(z2), cimag(z2));
+  }
+}
