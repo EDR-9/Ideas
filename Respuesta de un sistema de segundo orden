@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include <math.h>
+#include <complex.h>
+
+/* Obtener la respuesta al escalón unitario del sistema w^2/s^2 + 2zws + w^2 */
+
+void quadratic(double *, double *, int);
+
+int main() {
+  
+  int i, n;
+  
+  printf("Respuesta de un sistema w^2/(s^2 + 2zws + w^2) al escalón unitario\n\n");
+  printf("¿Cuántos valores distintos del factor de amortiguamiento y de la frecuencia quieres usar?\n");
+  scanf("%d", &n);
+  double zeta[n], omega[n], zw[n], wc[n];
+  
+  printf("Ingresa los valores de cada parámetro:\n");
+  
+  for(i = 0; i < n; i++) {
+     
+     scanf("%lf%lf", &zeta[i], &omega[i]);
+  }
+  printf("Dados los valores de z y w, 2zw y w^2 toman los siguientes valores:\n");
+  
+  for(i = 0; i < n; i++) {
+     
+     zw[i] = 2 * zeta[i] * omega[i];
+     wc[i] = omega[i] * omega[i];
+     printf("%f \t%f\n", zw[i], wc[i]);
+  } printf("\n");
+  quadratic(zw, wc, n);
+
+  return 0;
+}
+/* Cálculo de las raíces del polinomio de segundo grado */
+
+void quadratic(double *x, double *y, int k) {
+  
+  int i;
+  double r1, r2;
+
+  for(i = 0; i < k; i++) {
+     
+     r1 = (-x[i] + sqrt((x[i]*x[i]) - 4*y[i]))/2;
+     r2 = (-x[i] - sqrt((x[i]*x[i]) - 4*y[i]))/2;
+  
+     if((x[i]*x[i]) - 4*y[i] >= 0) {
+    
+        if(r1 == r2) {
+        
+           printf("Existe multiplicidad de raíces. Ambas son igual a %lf\n", r1);
+        }
+        else
+           
+           printf("Las raíces del polinomio son reales y diferentes, %lf y %lf\n", r1, r2);
+     }
+     if((x[i]*x[i]) - 4*y[i] < 0) {
+     
+        double complex z = csqrt((x[i]*x[i]) - 4*y[i]);
+        double im = cimag(z);
+        double complex z1;
+        double complex z2;
+
+        z1 = (-x[i] + z)/2;
+        z2 = (-x[i] - z)/2;
+        printf("Las raíces del polinomio son complejas:\n%lf+%lfi y %lf%lfi\n\n", creal(z1), cimag(z1), creal(z2), cimag(z2));
+     }
+  }
+}
+// En proceso...
