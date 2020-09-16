@@ -21,13 +21,13 @@ int main() {
      
      scanf("%lf%lf", &zeta[i], &omega[i]);
   }
-  printf("Dados los valores de z y w, 2zw y w^2 toman los siguientes valores:\n");
+  printf("Dados los valores de z y w, se calculan los coeficientes 2zw y w^2 para cada polinomio\n");
   
   for(i = 0; i < n; i++) {
      
      zw[i] = 2 * zeta[i] * omega[i];
      wc[i] = omega[i] * omega[i];
-     printf("%f \t%f\n", zw[i], wc[i]);
+     printf("\ts^2 + %lfs + %lf\n", zw[i], wc[i]);
   } printf("\n");
   quadratic(zw, wc, n);
 
@@ -40,6 +40,7 @@ void quadratic(double *x, double *y, int k) {
   int i;
   double r1, r2;
 
+  printf("Las raíces de cada polinomio son:\n");
   for(i = 0; i < k; i++) {
      
      r1 = (-x[i] + sqrt((x[i]*x[i]) - 4*y[i]))/2;
@@ -64,7 +65,7 @@ void quadratic(double *x, double *y, int k) {
 
         z1 = (-x[i] + z)/2;
         z2 = (-x[i] - z)/2;
-        printf("Las raíces del polinomio son complejas:\n%lf+%lfi y %lf%lfi\n\n", creal(z1), cimag(z1), creal(z2), cimag(z2));
+        printf("\n%lf+%lfi, %lf%lfi\n", creal(z1), cimag(z1), creal(z2), cimag(z2));
      }
   }
 }
