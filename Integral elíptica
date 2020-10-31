@@ -1,0 +1,36 @@
+/*********** Integración numérica de funciones de la forma sqrt(1 - k^2 sen^2(x)) **************/
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+  
+  int i, n;
+  double a, b, k, step, x_n, x_n1, y_n, y_n1, integral = 0;
+  printf("Integral elíptica\n\nIngresa el parámetro k: ");
+  scanf("%lf", &k);
+  while(k <= 0 || k >= 1) {
+     printf("¡k debe estar en el intervalo 0 < k < 1!\n");
+     scanf("%lf", &k);
+  }
+  printf("Intervalo de integración\n");
+  printf("Límite inferior: ");
+  scanf("%lf", &a);
+  printf("Límite superior: ");
+  scanf("%lf", &b);
+  printf("Particiones del intervalo: ");
+  scanf("%d", &n);
+  step = (b - a)/n;
+  printf("La longitud de los subintervalos es h = %lf\n\n", step);
+  
+  for(i = 0; i < n; i++) {
+     x_n = a + i*step;
+     y_n = sqrt(1 - (k*k)*(sin(x_n)*sin(x_n)));
+     x_n1 = a + step*(i + 1);
+     y_n1 = sqrt(1 - (k*k)*(sin(x_n1)*sin(x_n1)));
+     integral += (x_n1 - x_n)*(y_n + y_n1)/2;
+     printf("%lf  %lf\t%lf\n", x_n, y_n, integral);
+  }
+  printf("\nIntegral de sqrt(1 - %lfsen^2(x)) sobre (%lf,%lf): %lf", k*k, a, b, integral);
+  return 0;
+}
