@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    
+    int i, j, k = 0, /*n,*/ inf, sup, div, mod;
+    printf("Elige un intervalo cerrado de números enteros.\n");
+    printf("Valor inferior: ");
+    scanf("%d", &inf);
+    printf("Valor superior: ");
+    scanf("%d", &sup);
+    /*n = sup - inf;*/ printf("\n");
+    
+    for(i = inf; i <= sup; i++) {
+        for(j = sup; j >= inf; j--) {
+             div = (int) i/j;
+             mod = i % j;
+             if(div == mod) {
+                 printf("%d mod %d = floor(%d/%d)\n", i, j, i, j);
+                 k++;
+             }
+        }
+    }
+    printf("\nDentro del intervalo [%d, %d] hay %d pares de enteros que satisfacen la propiedad mencionada\n", inf, sup, k);
+    return 0;
+}
