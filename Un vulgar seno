@@ -1,0 +1,39 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+    
+    int i, j, k, n;
+    long double f0, T0, phase, a, b, step, t, señal;
+    const long double pi = acos(-1.0);
+    
+    cout << "Número de armónicos: ";
+    cin >> n;
+    cout << "Frecuencia fundamental (Hz): ";
+    cin >> f0;
+    T0 = 1/f0;
+    cout << "Fase (rad): ";
+    cin >> phase;
+    cout << "Período fundamental (s): " << T0;
+    cout << "\n\nINTERVALO DE LA FUNCIÓN (linspace)\n" << "Límite inferior: ";
+    cin >> a;
+    cout << "Límite superior: ";
+    cin >> b;
+    cout << "Número de muestras o particiones por intervalo: ";
+    cin >> k;
+    step = (b - a)/k;
+    cout << "Step: " << step;
+    t = a;
+    
+    for(i = 1; i < n+1; i++) {
+        cout << "\n\nArmónico " << i << "\n";
+        for(j = 0; j < k+1; j++) {
+            señal = sin((2*pi*f0*i*t) + phase);
+            printf("%LF \t%LF\n", t, señal);
+            t += step;
+        }
+    }
+    return 0;
+}
