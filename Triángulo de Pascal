@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    
+	int i, j, n, tot, coef = 1;
+    printf("Exponente entero del binomio: ");
+    scanf("%d", &n);
+	
+	while(n < 0) {
+		printf("Solo exponentes no negativos!!!\nEscribe otro: ");
+		scanf("%d", &n);
+	}
+	
+	for(i = 0; i < n + 1; i++) {  // ciclo para cada fila o renglón
+		printf("\n");
+	   	tot = (i + 1)*(i + 2)/2;  // cantidad total de números en el triángulo
+		for(j = 0; j <= i; j++) {
+			if(i == 0 || j == 0) 
+				coef = 1;
+			else
+				coef = coef*(i - j + 1)/j;
+			printf("\t%d", coef);
+		}
+	}
+	if(tot == 1) {
+		printf("\n\nEl arreglo solo tiene %d elemento", tot);
+	}
+	else if (tot > 1) {
+		printf("\n\nEl arreglo triangular tiene %d elementos", tot);
+	}
+    return 0;
+}
