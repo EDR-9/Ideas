@@ -11,9 +11,9 @@ int main() {
 		scanf("%d", &n);
 	}
 	
-	for(i = 0; i < n + 1; i++) {  // ciclo para cada fila o renglón
+	for(i = 0; i < n + 1; i++) {   //ciclo para cada fila o renglón
 		printf("\n");
-	   	tot = (i + 1)*(i + 2)/2;  // cantidad total de números en el triángulo
+	   	tot = (i + 1)*(i + 2)/2;   //cantidad total de números en el triángulo
 		for(j = 0; j <= i; j++) {
 			if(i == 0 || j == 0) 
 				coef = 1;
