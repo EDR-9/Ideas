@@ -84,3 +84,90 @@ For more control over padding, you could modify the script to explicitly add zer
 - **Hex Format**: The above script assumes the hex files are in a plain hex format, but if you're dealing with Intel HEX format or Motorola S-records, you may need additional parsing.
 
 Let me know if you need help with any specific aspect of the process or have additional questions!
+
+Yes, the resulting file from the Python script I provided will be a **binary file** (not in hex format) because it directly writes the raw byte data to the output file. The data is being assembled at specific memory locations in binary form, and then it's written to disk as a raw binary file.
+
+However, **Intel HEX (`.hex`)** or **Motorola S-record (`.s19`)** formats are text-based file formats that describe memory regions with hexadecimal values, so if you want the resulting file to be in one of these formats (rather than raw binary), you will need to generate the output in that format.
+
+### **Handling Intel HEX (`.hex`) or Motorola S-record (`.s19`) Format**:
+Yes, the **process** for combining files at specific memory locations is the same in principle, but there are some key differences in how you handle these formats:
+
+- **Intel HEX (.hex)**: This is a text-based format that represents memory locations and corresponding byte data in hexadecimal form. You’ll need to handle the creation of Intel HEX records, ensuring that each record specifies the correct memory address and data.
+
+- **Motorola S-record (.s19)**: Similarly, S-records are another text-based format used to represent memory contents. These records have a specific structure that includes the memory address and data, with checksums for error detection.
+
+### **Combining Intel HEX or S-record Files**:
+Here’s how you can adapt the process for **Intel HEX** or **Motorola S-record** formats:
+
+1. **Intel HEX (`.hex`)**: You need to read the `.hex` files, parse the memory addresses and data from each, and then combine them into a single output file with the correct memory addresses and data.
+
+2. **Motorola S-record (`.s19`)**: Similar to Intel HEX, you would parse each S-record, adjust the memory addresses, and concatenate them into a new S-record file.
+
+### **Approach to Combining Intel HEX or S-record Files**:
+
+#### 1. **Intel HEX**:
+To handle Intel HEX files, you can use a Python library like **`intelhex`** to read, manipulate, and write Intel HEX files. This library will manage the HEX format for you.
+
+- **Install the `intelhex` library**:
+  ```bash
+  pip install intelhex
+  ```
+
+- **Python Example for Combining Intel HEX Files**:
+  
+  Here’s a Python example that reads multiple Intel HEX files, places them at specified memory offsets, and outputs a combined Intel HEX file.
+
+  ```python
+  from intelhex import IntelHex
+
+  def combine_hex_files(output_file, memory_map):
+      # Create a new IntelHex object to hold the combined data
+      combined_hex = IntelHex()
+
+      for start_addr, file_path in memory_map:
+          hex_file = IntelHex(file_path)
+          # Load data from the hex file and add it to the combined hex at the specified address
+          combined_hex.loadhex(file_path)
+          combined_hex.write_hex_file(output_file)
+  
+      # Save the combined hex file
+      combined_hex.tofile(output_file, format='hex')
+      print(f'Combined hex file saved to {output_file}')
+
+  # Memory map for placing files at specific memory locations
+  memory_map = [
+      (0x0000, 'file1.hex'),
+      (0x1000, 'file2.hex'),
+      (0x2000, 'file3.hex')
+  ]
+
+  # Combine the hex files
+  output_file = 'combined_output.hex'
+  combine_hex_files(output_file, memory_map)
+  ```
+
+In this example:
+- The `IntelHex` library is used to load each individual `.hex` file and write the combined content back to a new `.hex` file.
+- The files are "merged" into the combined file at the desired starting addresses.
+
+#### 2. **Motorola S-record (`.s19`)**:
+The process for S-record files is similar. You can use a library like **`srec`** or **`srecord`** to handle the S-record format. Here’s a basic outline:
+
+- You’ll need to parse the S-records, adjust the memory addresses, and concatenate the data into a new S-record file.
+
+If you're working with a custom script or using the S-record format directly, you might need to handle the conversion manually by adjusting the address field in each record.
+
+#### **General Process**:
+For both formats, the steps would be:
+1. **Read the data**: Parse the Intel HEX or S-record files to extract the byte data and memory addresses.
+2. **Adjust memory addresses**: For each file, adjust its starting memory address to the desired location in the memory map.
+3. **Write the combined data**: Once all files are placed at their respective memory addresses, write the output to the target format (either HEX or S-record).
+
+### **Considerations for Padding**:
+- In both HEX and S-record formats, if you need to pad the space between files, you can add padding bytes (`00`) at the appropriate addresses. This can be done by simply filling in unused space with zeroes before or between files.
+
+### **Final Note**:
+- **Intel HEX** files and **Motorola S-records** represent data in text-based formats, and their structure is designed to include memory addresses and checksums. While **binary files** are just raw data, text-based formats require parsing and careful handling of the address fields, especially when combining files at specific memory positions.
+- Libraries like `intelhex` (for HEX) and `srecord` can simplify the task of combining multiple files into a single formatted output file.
+
+Let me know if you'd like further assistance or need help with specific parts of the code!
