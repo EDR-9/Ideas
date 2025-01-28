@@ -7,27 +7,27 @@ Ok, I have some questions:
 
 3. Why to choose that checksum verification? Both numbers are supposed to be equals, right? Would it be the same to make checksum verification as simple comparison calculated_checksum == checksum? For example if both are 0xF0A0, your verification would be as mismatch when they're not
 
-These are excellent questions! Let’s go through them one by one:
+These are excellent questions! Letâ€™s go through them one by one:
 
 ### 1. Address Field Length (4 or 8 characters)
 
-In Motorola S-records, the length of the address field depends on the record type. Here’s the breakdown:
+In Motorola S-records, the length of the address field depends on the record type. Hereâ€™s the breakdown:
 
-- **S1 record**: The address is 2 bytes long, so it’s represented by 4 hexadecimal characters.
-- **S2 record**: The address is 3 bytes long, so it’s represented by 6 hexadecimal characters.
-- **S3 record**: The address is 4 bytes long, so it’s represented by 8 hexadecimal characters.
+- **S1 record**: The address is 2 bytes long, so itâ€™s represented by 4 hexadecimal characters.
+- **S2 record**: The address is 3 bytes long, so itâ€™s represented by 6 hexadecimal characters.
+- **S3 record**: The address is 4 bytes long, so itâ€™s represented by 8 hexadecimal characters.
 
-So, when you parse the address, the length of the address depends on the record type (S1, S2, or S3). For the example I provided earlier, I used 4 characters assuming it was an S1 record, which is the most common. But you’d need to handle different address lengths depending on the record type.
+So, when you parse the address, the length of the address depends on the record type (S1, S2, or S3). For the example I provided earlier, I used 4 characters assuming it was an S1 record, which is the most common. But youâ€™d need to handle different address lengths depending on the record type.
 
 If you're unsure about the type of record, you could check the first character (e.g., `S1`, `S2`, `S3`), which will tell you how many characters to expect for the address.
 
 ### 2. Checksum Calculation
 
-Let’s dive into the checksum calculation. In Motorola S-records, the checksum is calculated to ensure that the data has not been corrupted. Here’s how it works:
+Letâ€™s dive into the checksum calculation. In Motorola S-records, the checksum is calculated to ensure that the data has not been corrupted. Hereâ€™s how it works:
 
 - **Checksum Calculation**: The checksum is the sum of the byte count, address bytes, and data bytes, but **without including the checksum byte itself**. The result is then reduced to a single byte (by taking modulo 256, or `& 0xFF`).
 
-Here’s the detailed breakdown of how I came up with the checksum calculation in the code:
+Hereâ€™s the detailed breakdown of how I came up with the checksum calculation in the code:
 
 - **Byte Count**: This represents the total number of bytes in the record, including the byte count itself (excluding the record type and checksum). We sum it up.
 - **Address**: The address is split into two bytes (high byte and low byte). For example, if the address is `0x1234`, the high byte would be `0x12` and the low byte would be `0x34`. The address is added to the checksum sum byte-by-byte.
@@ -35,7 +35,7 @@ Here’s the detailed breakdown of how I came up with the checksum calculation in 
 - **Modulo 256**: After summing the bytes, we take the result modulo 256 (`& 0xFF`) to ensure it fits in a byte (i.e., 0 to 255).
 - **Final Checksum**: To get the final checksum, we take the 8-bit complement (subtract from 256) of the summed value. This ensures that the checksum plus the calculated sum equals 0 when taken modulo 256.
 
-Here’s a simplified version of how it works in code:
+Hereâ€™s a simplified version of how it works in code:
 
 ```python
 # Let's say you have the following:
@@ -58,11 +58,11 @@ The reason why I also **shift** the address right (`address >> 8`) is that addre
 
 ### 3. Checksum Verification
 
-Now, let’s talk about why the checksum comparison is done this way.
+Now, letâ€™s talk about why the checksum comparison is done this way.
 
 The way the checksum is verified in S-records is essentially to ensure that adding the checksum to the sum of all the bytes results in a multiple of 256 (or 0 mod 256). The checksum is added so that the **total sum** (including the checksum byte) becomes 0 when taken modulo 256.
 
-Here’s the concept in more detail:
+Hereâ€™s the concept in more detail:
 - **Checksum byte**: This is the final byte of the S-record.
 - **Formula**: The checksum byte is chosen such that the sum of all the bytes (including the checksum) modulo 256 is 0. That means the sum of the byte count, address bytes, data bytes, and checksum byte will equal `0 mod 256`.
 
@@ -78,7 +78,7 @@ I hope that clears up your questions! The checksum might seem a bit tricky at fi
 
 I got checksum mismatch in almost all the records, checksum and calculated_checksum must be equal, right?
 
-Ah, I see where the confusion might be. You’re absolutely right in thinking that the **checksum** and the **calculated checksum** must be equal, but there's a slight nuance in the way the checksum works in Motorola S-records. Let's walk through it carefully.
+Ah, I see where the confusion might be. Youâ€™re absolutely right in thinking that the **checksum** and the **calculated checksum** must be equal, but there's a slight nuance in the way the checksum works in Motorola S-records. Let's walk through it carefully.
 
 ### Key Concept of S-record Checksum:
 In Motorola S-records, **the checksum is designed to make the sum of all bytes, including the checksum byte itself, equal to zero modulo 256**. So when you calculate the checksum, you need to ensure that after adding the checksum to the sum of all other bytes, the result modulo 256 is zero.
@@ -86,14 +86,14 @@ In Motorola S-records, **the checksum is designed to make the sum of all bytes, 
 ### The Correct Checksum Calculation:
 The checksum byte is calculated **before** the checksum is added, ensuring that the final sum (including the checksum byte) equals zero modulo 256.
 
-Here’s the corrected approach for the checksum calculation:
+Hereâ€™s the corrected approach for the checksum calculation:
 
 1. **Sum of bytes (without checksum)**: This includes the byte count, the address bytes, and the data bytes.
 2. **Calculated checksum**: This is calculated as the 8-bit complement of the sum of these bytes, **modulo 256**.
 
 ### Example Calculation:
 
-Let’s say you have a record with the following data:
+Letâ€™s say you have a record with the following data:
 - Byte count: `0x10` (16)
 - Address: `0x1234`
 - Data bytes: `0xDE, 0xAD, 0xBE, 0xEF`
@@ -129,7 +129,7 @@ The issue you're seeing with **mismatches** likely happens because of one or mor
 
 3. **Address parsing**: Make sure you're parsing the address correctly based on the S-record type (S1, S2, or S3).
 
-Here’s how the verification should be done:
+Hereâ€™s how the verification should be done:
 
 ```python
 def verify_checksum(record):
@@ -183,7 +183,7 @@ Great question! Although both `.s19` and `.hex` files are used to represent bina
   - `.s19` files include metadata (like address information and checksum) and are human-readable (text).
 
 - **.hex (Intel Hex Format)**:
-  - The `.hex` file format, on the other hand, is also a text-based format but follows a different structure. It’s typically used for storing binary data in hexadecimal format with specific record types.
+  - The `.hex` file format, on the other hand, is also a text-based format but follows a different structure. Itâ€™s typically used for storing binary data in hexadecimal format with specific record types.
   - Each record in a `.hex` file starts with a colon (`:`) followed by the length, address, type, data, and checksum.
   - The `.hex` file format is very common in the world of microcontrollers and embedded systems as well, and it is usually used for programming devices like EEPROMs or Flash memory.
   - `.hex` files are also human-readable text files, but the structure is different compared to `.s19`.
@@ -200,7 +200,7 @@ To merge `.s19` files and generate a `.hex` file, you would typically need to:
 - Join the binary data in the correct order (taking address offsets into account).
 - Create a new `.hex` file in the Intel Hex format.
 
-Here’s how you can approach it programmatically:
+Hereâ€™s how you can approach it programmatically:
 
 #### Step-by-Step Approach:
 
@@ -286,7 +286,7 @@ Let me know if you have any more questions!
 
 I've found more records like S0 and S7 can you explain how many are and what do they mean, please?
 
-Absolutely! The Motorola S-record format includes several different types of records beyond just the `S1`, `S2`, and `S3` that are typically used for storing actual data. Let’s go through the most common ones, including the `S0` and `S7` records, and explain what they mean.
+Absolutely! The Motorola S-record format includes several different types of records beyond just the `S1`, `S2`, and `S3` that are typically used for storing actual data. Letâ€™s go through the most common ones, including the `S0` and `S7` records, and explain what they mean.
 
 ### Overview of S-record Types
 
@@ -313,10 +313,10 @@ Absolutely! The Motorola S-record format includes several different types of rec
 5. **S7 Record (End of File)**:
    - **Purpose**: The `S7` record is used to indicate the end of the data in the S-record file. It provides information about the ending address, so the system knows where the last data byte was written in memory.
    - **Structure**: The `S7` record starts with `S7`, followed by the byte count, the address of the last byte in memory, and the checksum.
-   - **Format**: It’s important for helping programs (like loaders or disassemblers) know when the data ends. It is not used to store any data bytes like the `S1`, `S2`, or `S3` records.
+   - **Format**: Itâ€™s important for helping programs (like loaders or disassemblers) know when the data ends. It is not used to store any data bytes like the `S1`, `S2`, or `S3` records.
 
 6. **S8 Record (End of Data, with Length Information)**:
-   - **Purpose**: The `S8` record is used to provide a more explicit ending of the data by giving information about the length of the data portion in the file. It’s used when a more specific length is necessary.
+   - **Purpose**: The `S8` record is used to provide a more explicit ending of the data by giving information about the length of the data portion in the file. Itâ€™s used when a more specific length is necessary.
    - **Structure**: The `S8` record contains the length of the data block and may optionally contain the starting address or other metadata.
    - **Format**: Similar to `S7`, but with additional length data.
 
@@ -358,13 +358,14 @@ If you have multiple `.s19` files, you would typically have one `S0` record at t
 
 ---
 
-If you’re looking at your `.s19` file and seeing records like `S0`, `S7`, or others, the metadata provided by the `S0` record can often be used for informational purposes (like debugging), while the `S7` record is often used to signify the end of the data.
+If youâ€™re looking at your `.s19` file and seeing records like `S0`, `S7`, or others, the metadata provided by the `S0` record can often be used for informational purposes (like debugging), while the `S7` record is often used to signify the end of the data.
 
 Let me know if you need further details or examples on working with these records!
 
 ### Example
 
 Example data: S1130170707172737475767778797A7B7C7D7E7F03
-_________________________________________________________________________________| Record Type | Data Bytes | EEPROM Address |   Payload              | Checksum |
----------------------------------------------------------------------------------
-|     S1      |    0x13    |     0x0170     | 0x7071727374757677...7F|   0x03   |
+_____________________________________________________________________________________________
+| Record Type | Data Bytes | EEPROM Address |               Payload              | Checksum |
+---------------------------------------------------------------------------------------------
+|     S1      |    0x13    |     0x0170     | 0x707172737475767778797A7B7C7D7E7F |   0x03   |
