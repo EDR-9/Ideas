@@ -1,0 +1,1709 @@
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing system_SP49.o(.rev16_text), (4 bytes).
+    Removing system_SP49.o(.revsh_text), (4 bytes).
+    Removing Core_Task_Init.o(.rev16_text), (4 bytes).
+    Removing Core_Task_Init.o(.revsh_text), (4 bytes).
+    Removing Core_Task_Events.o(.rev16_text), (4 bytes).
+    Removing Core_Task_Events.o(.revsh_text), (4 bytes).
+    Removing Core_Acq.o(.rev16_text), (4 bytes).
+    Removing Core_Acq.o(.revsh_text), (4 bytes).
+    Removing Core_Acq_Pressure.o(.rev16_text), (4 bytes).
+    Removing Core_Acq_Pressure.o(.revsh_text), (4 bytes).
+    Removing Core_Acq_Temperature.o(.rev16_text), (4 bytes).
+    Removing Core_Acq_Temperature.o(.revsh_text), (4 bytes).
+    Removing Core_Acq_Acceleration.o(.rev16_text), (4 bytes).
+    Removing Core_Acq_Acceleration.o(.revsh_text), (4 bytes).
+    Removing Core_Acq_ExternalWakeup.o(.rev16_text), (4 bytes).
+    Removing Core_Acq_ExternalWakeup.o(.revsh_text), (4 bytes).
+    Removing Core_Acq_Voltage.o(.rev16_text), (4 bytes).
+    Removing Core_Acq_Voltage.o(.revsh_text), (4 bytes).
+    Removing Core_Ang.o(.rev16_text), (4 bytes).
+    Removing Core_Ang.o(.revsh_text), (4 bytes).
+    Removing Core_TM.o(.rev16_text), (4 bytes).
+    Removing Core_TM.o(.revsh_text), (4 bytes).
+    Removing Core_TM_Interval.o(.rev16_text), (4 bytes).
+    Removing Core_TM_Interval.o(.revsh_text), (4 bytes).
+    Removing Core_TM_Delay.o(.rev16_text), (4 bytes).
+    Removing Core_TM_Delay.o(.revsh_text), (4 bytes).
+    Removing Core_TM_LPM.o(.rev16_text), (4 bytes).
+    Removing Core_TM_LPM.o(.revsh_text), (4 bytes).
+    Removing Core_Diag.o(.rev16_text), (4 bytes).
+    Removing Core_Diag.o(.revsh_text), (4 bytes).
+    Removing Core_Diag_ATIC.o(.rev16_text), (4 bytes).
+    Removing Core_Diag_ATIC.o(.revsh_text), (4 bytes).
+    Removing Core_Diag_Platform.o(.rev16_text), (4 bytes).
+    Removing Core_Diag_Platform.o(.revsh_text), (4 bytes).
+    Removing Core_LF.o(.rev16_text), (4 bytes).
+    Removing Core_LF.o(.revsh_text), (4 bytes).
+    Removing Core_RF.o(.rev16_text), (4 bytes).
+    Removing Core_RF.o(.revsh_text), (4 bytes).
+    Removing Core_Keep.o(.rev16_text), (4 bytes).
+    Removing Core_Keep.o(.revsh_text), (4 bytes).
+    Removing Core_Keep_Flash.o(.rev16_text), (4 bytes).
+    Removing Core_Keep_Flash.o(.revsh_text), (4 bytes).
+    Removing Core_Keep_NVRAM.o(.rev16_text), (4 bytes).
+    Removing Core_Keep_NVRAM.o(.revsh_text), (4 bytes).
+    Removing App_Acq.o(.rev16_text), (4 bytes).
+    Removing App_Acq.o(.revsh_text), (4 bytes).
+    Removing App_Acq_Pressure.o(.rev16_text), (4 bytes).
+    Removing App_Acq_Pressure.o(.revsh_text), (4 bytes).
+    Removing App_Acq_Temperature.o(.rev16_text), (4 bytes).
+    Removing App_Acq_Temperature.o(.revsh_text), (4 bytes).
+    Removing App_Acq_Acceleration.o(.rev16_text), (4 bytes).
+    Removing App_Acq_Acceleration.o(.revsh_text), (4 bytes).
+    Removing App_Acq_Voltage.o(.rev16_text), (4 bytes).
+    Removing App_Acq_Voltage.o(.revsh_text), (4 bytes).
+    Removing App_Delta.o(.rev16_text), (4 bytes).
+    Removing App_Delta.o(.revsh_text), (4 bytes).
+    Removing App_Delta_Angle.o(.rev16_text), (4 bytes).
+    Removing App_Delta_Angle.o(.revsh_text), (4 bytes).
+    Removing App_Delta_Motion.o(.rev16_text), (4 bytes).
+    Removing App_Delta_Motion.o(.revsh_text), (4 bytes).
+    Removing App_Delta_Pressure.o(.rev16_text), (4 bytes).
+    Removing App_Delta_Pressure.o(.revsh_text), (4 bytes).
+    Removing App_Delta_Battery.o(.rev16_text), (4 bytes).
+    Removing App_Delta_Battery.o(.revsh_text), (4 bytes).
+    Removing App_LF.o(.rev16_text), (4 bytes).
+    Removing App_LF.o(.revsh_text), (4 bytes).
+    Removing App_LF_Command.o(.rev16_text), (4 bytes).
+    Removing App_LF_Command.o(.revsh_text), (4 bytes).
+    Removing App_Mode.o(.rev16_text), (4 bytes).
+    Removing App_Mode.o(.revsh_text), (4 bytes).
+    Removing App_Mode_Actions.o(.rev16_text), (4 bytes).
+    Removing App_Mode_Actions.o(.revsh_text), (4 bytes).
+    Removing App_Mode_History.o(.rev16_text), (4 bytes).
+    Removing App_Mode_History.o(.revsh_text), (4 bytes).
+    Removing App_Mode_Reset.o(.rev16_text), (4 bytes).
+    Removing App_Mode_Reset.o(.revsh_text), (4 bytes).
+    Removing App_Mode_Diag.o(.rev16_text), (4 bytes).
+    Removing App_Mode_Diag.o(.revsh_text), (4 bytes).
+    Removing App_RF.o(.rev16_text), (4 bytes).
+    Removing App_RF.o(.revsh_text), (4 bytes).
+    Removing App_RF_Request.o(.rev16_text), (4 bytes).
+    Removing App_RF_Request.o(.revsh_text), (4 bytes).
+    Removing App_RF_Data.o(.rev16_text), (4 bytes).
+    Removing App_RF_Data.o(.revsh_text), (4 bytes).
+    Removing App_Config_Updater.o(CODELDR.ATIC172_WFC), (2 bytes).
+    Removing SPI.o(.rev16_text), (4 bytes).
+    Removing SPI.o(.revsh_text), (4 bytes).
+    Removing SPI.o(CODELDR.ATIC172_WFC), (172 bytes).
+    Removing Eep.o(.rev16_text), (4 bytes).
+    Removing Eep.o(.revsh_text), (4 bytes).
+    Removing Eep.o(CODELDR.ATIC172_WFC), (852 bytes).
+    Removing Eep.o(CONST.ATIC172_WFC), (39 bytes).
+    Removing Eep.o(NVRAM_1.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(.rev16_text), (4 bytes).
+    Removing Cfg_Types.o(.revsh_text), (4 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.16), (2 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.16), (2 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.16), (2 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.16), (2 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.16), (2 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.32), (4 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.32), (4 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.32), (4 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.32), (4 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.32), (4 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.32), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.32), (15 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.32), (16 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (16 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (6 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (6 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (6 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (6 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (6 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing Cfg_Types.o(CALIB_RO.ATIC172_WFC.8), (1 bytes).
+    Removing startup_SP49.o(HEAP), (0 bytes).
+
+151 unused section(s) (total 1570 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/../cmprslib/zerorunl.c           0x00000000   Number         0  __dczerorl.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  idiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/string/memcmp.c         0x00000000   Number         0  memcmp.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    ../src/App_Acq.c                         0x00000000   Number         0  App_Acq.o ABSOLUTE
+    ../src/App_Acq_Acceleration.c            0x00000000   Number         0  App_Acq_Acceleration.o ABSOLUTE
+    ../src/App_Acq_Pressure.c                0x00000000   Number         0  App_Acq_Pressure.o ABSOLUTE
+    ../src/App_Acq_Temperature.c             0x00000000   Number         0  App_Acq_Temperature.o ABSOLUTE
+    ../src/App_Acq_Voltage.c                 0x00000000   Number         0  App_Acq_Voltage.o ABSOLUTE
+    ../src/App_Config_Updater.c              0x00000000   Number         0  App_Config_Updater.o ABSOLUTE
+    ../src/App_Delta.c                       0x00000000   Number         0  App_Delta.o ABSOLUTE
+    ../src/App_Delta_Angle.c                 0x00000000   Number         0  App_Delta_Angle.o ABSOLUTE
+    ../src/App_Delta_Battery.c               0x00000000   Number         0  App_Delta_Battery.o ABSOLUTE
+    ../src/App_Delta_Motion.c                0x00000000   Number         0  App_Delta_Motion.o ABSOLUTE
+    ../src/App_Delta_Pressure.c              0x00000000   Number         0  App_Delta_Pressure.o ABSOLUTE
+    ../src/App_LF.c                          0x00000000   Number         0  App_LF.o ABSOLUTE
+    ../src/App_LF_Command.c                  0x00000000   Number         0  App_LF_Command.o ABSOLUTE
+    ../src/App_Mode.c                        0x00000000   Number         0  App_Mode.o ABSOLUTE
+    ../src/App_Mode_Actions.c                0x00000000   Number         0  App_Mode_Actions.o ABSOLUTE
+    ../src/App_Mode_Diag.c                   0x00000000   Number         0  App_Mode_Diag.o ABSOLUTE
+    ../src/App_Mode_History.c                0x00000000   Number         0  App_Mode_History.o ABSOLUTE
+    ../src/App_Mode_Reset.c                  0x00000000   Number         0  App_Mode_Reset.o ABSOLUTE
+    ../src/App_RF.c                          0x00000000   Number         0  App_RF.o ABSOLUTE
+    ../src/App_RF_Data.c                     0x00000000   Number         0  App_RF_Data.o ABSOLUTE
+    ../src/App_RF_Request.c                  0x00000000   Number         0  App_RF_Request.o ABSOLUTE
+    ../src/Cfg_Types.c                       0x00000000   Number         0  Cfg_Types.o ABSOLUTE
+    ../src/Core_Acq.c                        0x00000000   Number         0  Core_Acq.o ABSOLUTE
+    ../src/Core_Acq_Acceleration.c           0x00000000   Number         0  Core_Acq_Acceleration.o ABSOLUTE
+    ../src/Core_Acq_ExternalWakeup.c         0x00000000   Number         0  Core_Acq_ExternalWakeup.o ABSOLUTE
+    ../src/Core_Acq_Pressure.c               0x00000000   Number         0  Core_Acq_Pressure.o ABSOLUTE
+    ../src/Core_Acq_Temperature.c            0x00000000   Number         0  Core_Acq_Temperature.o ABSOLUTE
+    ../src/Core_Acq_Voltage.c                0x00000000   Number         0  Core_Acq_Voltage.o ABSOLUTE
+    ../src/Core_Ang.c                        0x00000000   Number         0  Core_Ang.o ABSOLUTE
+    ../src/Core_Diag.c                       0x00000000   Number         0  Core_Diag.o ABSOLUTE
+    ../src/Core_Diag_ATIC.c                  0x00000000   Number         0  Core_Diag_ATIC.o ABSOLUTE
+    ../src/Core_Diag_Platform.c              0x00000000   Number         0  Core_Diag_Platform.o ABSOLUTE
+    ../src/Core_Keep.c                       0x00000000   Number         0  Core_Keep.o ABSOLUTE
+    ../src/Core_Keep_Flash.c                 0x00000000   Number         0  Core_Keep_Flash.o ABSOLUTE
+    ../src/Core_Keep_NVRAM.c                 0x00000000   Number         0  Core_Keep_NVRAM.o ABSOLUTE
+    ../src/Core_LF.c                         0x00000000   Number         0  Core_LF.o ABSOLUTE
+    ../src/Core_RF.c                         0x00000000   Number         0  Core_RF.o ABSOLUTE
+    ../src/Core_TM.c                         0x00000000   Number         0  Core_TM.o ABSOLUTE
+    ../src/Core_TM_Delay.c                   0x00000000   Number         0  Core_TM_Delay.o ABSOLUTE
+    ../src/Core_TM_Interval.c                0x00000000   Number         0  Core_TM_Interval.o ABSOLUTE
+    ../src/Core_TM_LPM.c                     0x00000000   Number         0  Core_TM_LPM.o ABSOLUTE
+    ../src/Core_Task_Events.c                0x00000000   Number         0  Core_Task_Events.o ABSOLUTE
+    ../src/Core_Task_Init.c                  0x00000000   Number         0  Core_Task_Init.o ABSOLUTE
+    ../src/Eep.c                             0x00000000   Number         0  Eep.o ABSOLUTE
+    ../src/SPI.c                             0x00000000   Number         0  SPI.o ABSOLUTE
+    ../src/startup_SP49.s                    0x00000000   Number         0  startup_SP49.o ABSOLUTE
+    ../src/system_SP49.c                     0x00000000   Number         0  system_SP49.o ABSOLUTE
+    ..\\sources\\Lib_Calib\\Lib_Calib_GP_Timer.asm 0x00000000   Number         0  Lib_Calib_GP_Timer.o ABSOLUTE
+    ..\\sources\\Lib_Calib\\Lib_Calib_LF_OnOff_Timer.asm 0x00000000   Number         0  Lib_Calib_LF_OnOff_Timer.o ABSOLUTE
+    ..\\sources\\Lib_Calib\\Lib_Calib_Precounter.asm 0x00000000   Number         0  Lib_Calib_Precounter.o ABSOLUTE
+    ..\\sources\\Lib_Calib\\Lib_Calib_Sample_Timer.asm 0x00000000   Number         0  Lib_Calib_Sample_Timer.o ABSOLUTE
+    ..\\sources\\Lib_Comp\\Lib_Comp_Acceleration.asm 0x00000000   Number         0  Lib_Comp_Acceleration.o ABSOLUTE
+    ..\\sources\\Lib_Comp\\Lib_Comp_Auto_Acc_Offset.asm 0x00000000   Number         0  Lib_Comp_Auto_Acc_Offset.o ABSOLUTE
+    ..\\sources\\Lib_Comp\\Lib_Comp_OnDemand_Acc_Offset.asm 0x00000000   Number         0  Lib_Comp_OnDemand_Acc_Offset.o ABSOLUTE
+    ..\\sources\\Lib_Comp\\Lib_Comp_Pressure.asm 0x00000000   Number         0  Lib_Comp_Pressure.o ABSOLUTE
+    ..\\sources\\Lib_Comp\\Lib_Comp_Reverse_Acceleration.asm 0x00000000   Number         0  Lib_Comp_Reverse_Acceleration.o ABSOLUTE
+    ..\\sources\\Lib_Comp\\Lib_Comp_Reverse_Pressure.asm 0x00000000   Number         0  Lib_Comp_Reverse_Pressure.o ABSOLUTE
+    ..\\sources\\Lib_Diag\\Lib_Diag_ADC_Check.asm 0x00000000   Number         0  Lib_Diag_ADC_Check.o ABSOLUTE
+    ..\\sources\\Lib_Diag\\Lib_Diag_RC_Osc_Chk.asm 0x00000000   Number         0  Lib_Diag_RC_Osc_Chk.o ABSOLUTE
+    ..\\sources\\Lib_Fl\\Lib_Fl_Change_UCS_Line.asm 0x00000000   Number         0  Lib_Fl_Change_UCS_Line.o ABSOLUTE
+    ..\\sources\\Lib_LF\\Lib_LF_Carrier_Mode_Config.asm 0x00000000   Number         0  Lib_LF_Carrier_Mode_Config.o ABSOLUTE
+    ..\\sources\\Lib_LF\\Lib_LF_Data_Mode_Config.asm 0x00000000   Number         0  Lib_LF_Data_Mode_Config.o ABSOLUTE
+    ..\\sources\\Lib_LF\\Lib_LF_Data_Reception.asm 0x00000000   Number         0  Lib_LF_Data_Reception.o ABSOLUTE
+    ..\\sources\\Lib_Math\\Lib_Math_CRC16_Check.asm 0x00000000   Number         0  Lib_Math_CRC16_Check.o ABSOLUTE
+    ..\\sources\\Lib_Math\\Lib_Math_CRC8_Calc.asm 0x00000000   Number         0  Lib_Math_CRC8_Calc.o ABSOLUTE
+    ..\\sources\\Lib_Math\\Lib_Math_Format_Measurement.asm 0x00000000   Number         0  Lib_Math_Format_Measurement.o ABSOLUTE
+    ..\\sources\\Lib_Math\\Lib_Math_Median.asm 0x00000000   Number         0  Lib_Math_Median.o ABSOLUTE
+    ..\\sources\\Lib_Math\\Lib_Math_Random_Gen.asm 0x00000000   Number         0  Lib_Math_Random_Gen.o ABSOLUTE
+    ..\\sources\\Lib_Math\\Lib_Math_SQRT.asm 0x00000000   Number         0  Lib_Math_SQRT.o ABSOLUTE
+    ..\\sources\\Lib_Meas\\Lib_Meas_Acc_FIR.asm 0x00000000   Number         0  Lib_Meas_Acc_FIR.o ABSOLUTE
+    ..\\sources\\Lib_Meas\\Lib_Meas_Comp_SupplyV.asm 0x00000000   Number         0  Lib_Meas_Comp_SupplyV.o ABSOLUTE
+    ..\\sources\\Lib_Meas\\Lib_Meas_Comp_Temp.asm 0x00000000   Number         0  Lib_Meas_Comp_Temp.o ABSOLUTE
+    ..\\sources\\Lib_Meas\\Lib_Meas_Fast_Sample.asm 0x00000000   Number         0  Lib_Meas_Fast_Sample.o ABSOLUTE
+    ..\\sources\\Lib_Meas\\Lib_Meas_MEIF_Config.asm 0x00000000   Number         0  Lib_Meas_MEIF_Config.o ABSOLUTE
+    ..\\sources\\Lib_Meas\\Lib_Meas_Raw_Acceleration.asm 0x00000000   Number         0  Lib_Meas_Raw_Acceleration.o ABSOLUTE
+    ..\\sources\\Lib_Meas\\Lib_Meas_Raw_Pressure.asm 0x00000000   Number         0  Lib_Meas_Raw_Pressure.o ABSOLUTE
+    ..\\sources\\Lib_RF\\Lib_RF_Config_Add.asm 0x00000000   Number         0  Lib_RF_Config_Add.o ABSOLUTE
+    ..\\sources\\Lib_RF\\Lib_RF_Config_Basic.asm 0x00000000   Number         0  Lib_RF_Config_Basic.o ABSOLUTE
+    ..\\sources\\Lib_RF\\Lib_RF_Start_Init_Delay.asm 0x00000000   Number         0  Lib_RF_Start_Init_Delay.o ABSOLUTE
+    ..\\sources\\Lib_RF\\Lib_RF_Testing.asm  0x00000000   Number         0  Lib_RF_Testing.o ABSOLUTE
+    ..\\sources\\Lib_RF\\Lib_RF_Transmit_Frame.asm 0x00000000   Number         0  Lib_RF_Transmit_Frame.o ABSOLUTE
+    ..\\sources\\Lib_RF\\Lib_RF_VCO_Tuning.asm 0x00000000   Number         0  Lib_RF_VCO_Tuning.o ABSOLUTE
+    ..\\sources\\Lib_Serv\\Lib_Serv_Hard_Fault.asm 0x00000000   Number         0  Lib_Serv_Hard_Fault.o ABSOLUTE
+    ..\\sources\\Lib_Serv\\Lib_Serv_Init_Interval_Timer.asm 0x00000000   Number         0  Lib_Serv_Init_Interval_Timer.o ABSOLUTE
+    ..\\sources\\Lib_Serv\\Lib_Serv_Read_ID.asm 0x00000000   Number         0  Lib_Serv_Read_ID.o ABSOLUTE
+    ..\\sources\\Lib_Serv\\Lib_Serv_Start_Xtal_Osc.asm 0x00000000   Number         0  Lib_Serv_Start_Xtal_Osc.o ABSOLUTE
+    ..\\sources\\Lib_Serv\\Lib_Serv_Stop_Xtal_Osc.asm 0x00000000   Number         0  Lib_Serv_Stop_Xtal_Osc.o ABSOLUTE
+    ..\\sources\\Lib_State\\Lib_State_LPM_Config.asm 0x00000000   Number         0  Lib_State_LPM_Config.o ABSOLUTE
+    ..\\sources\\Lib_State\\Lib_State_LPM_Start.asm 0x00000000   Number         0  Lib_State_LPM_Start.o ABSOLUTE
+    ..\\sources\\Lib_State\\Lib_State_Low_Power.asm 0x00000000   Number         0  Lib_State_Low_Power.o ABSOLUTE
+    ..\\sources\\Lib_State\\Lib_State_Thermal_Shutdown.asm 0x00000000   Number         0  Lib_State_Thermal_Shutdown.o ABSOLUTE
+    ..\src\App_Acq.c                         0x00000000   Number         0  App_Acq.o ABSOLUTE
+    ..\src\App_Acq_Acceleration.c            0x00000000   Number         0  App_Acq_Acceleration.o ABSOLUTE
+    ..\src\App_Acq_Pressure.c                0x00000000   Number         0  App_Acq_Pressure.o ABSOLUTE
+    ..\src\App_Acq_Temperature.c             0x00000000   Number         0  App_Acq_Temperature.o ABSOLUTE
+    ..\src\App_Acq_Voltage.c                 0x00000000   Number         0  App_Acq_Voltage.o ABSOLUTE
+    ..\src\App_Delta.c                       0x00000000   Number         0  App_Delta.o ABSOLUTE
+    ..\src\App_Delta_Angle.c                 0x00000000   Number         0  App_Delta_Angle.o ABSOLUTE
+    ..\src\App_Delta_Battery.c               0x00000000   Number         0  App_Delta_Battery.o ABSOLUTE
+    ..\src\App_Delta_Motion.c                0x00000000   Number         0  App_Delta_Motion.o ABSOLUTE
+    ..\src\App_Delta_Pressure.c              0x00000000   Number         0  App_Delta_Pressure.o ABSOLUTE
+    ..\src\App_LF.c                          0x00000000   Number         0  App_LF.o ABSOLUTE
+    ..\src\App_LF_Command.c                  0x00000000   Number         0  App_LF_Command.o ABSOLUTE
+    ..\src\App_Mode.c                        0x00000000   Number         0  App_Mode.o ABSOLUTE
+    ..\src\App_Mode_Actions.c                0x00000000   Number         0  App_Mode_Actions.o ABSOLUTE
+    ..\src\App_Mode_Diag.c                   0x00000000   Number         0  App_Mode_Diag.o ABSOLUTE
+    ..\src\App_Mode_History.c                0x00000000   Number         0  App_Mode_History.o ABSOLUTE
+    ..\src\App_Mode_Reset.c                  0x00000000   Number         0  App_Mode_Reset.o ABSOLUTE
+    ..\src\App_RF.c                          0x00000000   Number         0  App_RF.o ABSOLUTE
+    ..\src\App_RF_Data.c                     0x00000000   Number         0  App_RF_Data.o ABSOLUTE
+    ..\src\App_RF_Request.c                  0x00000000   Number         0  App_RF_Request.o ABSOLUTE
+    ..\src\Cfg_Types.c                       0x00000000   Number         0  Cfg_Types.o ABSOLUTE
+    ..\src\Core_Acq.c                        0x00000000   Number         0  Core_Acq.o ABSOLUTE
+    ..\src\Core_Acq_Acceleration.c           0x00000000   Number         0  Core_Acq_Acceleration.o ABSOLUTE
+    ..\src\Core_Acq_ExternalWakeup.c         0x00000000   Number         0  Core_Acq_ExternalWakeup.o ABSOLUTE
+    ..\src\Core_Acq_Pressure.c               0x00000000   Number         0  Core_Acq_Pressure.o ABSOLUTE
+    ..\src\Core_Acq_Temperature.c            0x00000000   Number         0  Core_Acq_Temperature.o ABSOLUTE
+    ..\src\Core_Acq_Voltage.c                0x00000000   Number         0  Core_Acq_Voltage.o ABSOLUTE
+    ..\src\Core_Ang.c                        0x00000000   Number         0  Core_Ang.o ABSOLUTE
+    ..\src\Core_Diag.c                       0x00000000   Number         0  Core_Diag.o ABSOLUTE
+    ..\src\Core_Diag_ATIC.c                  0x00000000   Number         0  Core_Diag_ATIC.o ABSOLUTE
+    ..\src\Core_Diag_Platform.c              0x00000000   Number         0  Core_Diag_Platform.o ABSOLUTE
+    ..\src\Core_Keep.c                       0x00000000   Number         0  Core_Keep.o ABSOLUTE
+    ..\src\Core_Keep_Flash.c                 0x00000000   Number         0  Core_Keep_Flash.o ABSOLUTE
+    ..\src\Core_Keep_NVRAM.c                 0x00000000   Number         0  Core_Keep_NVRAM.o ABSOLUTE
+    ..\src\Core_LF.c                         0x00000000   Number         0  Core_LF.o ABSOLUTE
+    ..\src\Core_RF.c                         0x00000000   Number         0  Core_RF.o ABSOLUTE
+    ..\src\Core_TM.c                         0x00000000   Number         0  Core_TM.o ABSOLUTE
+    ..\src\Core_TM_Delay.c                   0x00000000   Number         0  Core_TM_Delay.o ABSOLUTE
+    ..\src\Core_TM_Interval.c                0x00000000   Number         0  Core_TM_Interval.o ABSOLUTE
+    ..\src\Core_TM_LPM.c                     0x00000000   Number         0  Core_TM_LPM.o ABSOLUTE
+    ..\src\Core_Task_Events.c                0x00000000   Number         0  Core_Task_Events.o ABSOLUTE
+    ..\src\Core_Task_Init.c                  0x00000000   Number         0  Core_Task_Init.o ABSOLUTE
+    ..\src\Eep.c                             0x00000000   Number         0  Eep.o ABSOLUTE
+    ..\src\SPI.c                             0x00000000   Number         0  SPI.o ABSOLUTE
+    ..\src\system_SP49.c                     0x00000000   Number         0  system_SP49.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    FLASH_CONFIG                             0x10000800   Section       32  system_SP49.o(FLASH_CONFIG)
+    __tagsym$$used                           0x10000800   Number         0  system_SP49.o(FLASH_CONFIG)
+    RESET                                    0x10000820   Section        8  startup_SP49.o(RESET)
+    .ARM.Collect$$$$00000000                 0x10000828   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x10000828   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x1000082c   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x10000830   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x10000830   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x10000830   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x10000838   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x10000838   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x10000838   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x10000838   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x1000083c   Section        0  uidiv.o(.text)
+    .text                                    0x10000868   Section        0  idiv.o(.text)
+    .text                                    0x10000890   Section        0  memcpya.o(.text)
+    .text                                    0x100008b4   Section        0  memseta.o(.text)
+    .text                                    0x100008d8   Section        0  memcmp.o(.text)
+    .text                                    0x100008f4   Section       36  init.o(.text)
+    .text                                    0x10000918   Section        0  __dczerorl.o(.text)
+    Lib_Calib_GP_Timer_                      0x10000954   Section        8  Lib_Calib_GP_Timer.o(Lib_Calib_GP_Timer_)
+    Lib_Calib_LF_OnOff_Timer_                0x1000095c   Section       12  Lib_Calib_LF_OnOff_Timer.o(Lib_Calib_LF_OnOff_Timer_)
+    Lib_Calib_Precounter_                    0x10000968   Section        8  Lib_Calib_Precounter.o(Lib_Calib_Precounter_)
+    Lib_Calib_Sample_Timer_                  0x10000970   Section        8  Lib_Calib_Sample_Timer.o(Lib_Calib_Sample_Timer_)
+    Lib_Comp_Acceleration_                   0x10000978   Section        8  Lib_Comp_Acceleration.o(Lib_Comp_Acceleration_)
+    Lib_Comp_Auto_Acc_Offset_                0x10000980   Section        8  Lib_Comp_Auto_Acc_Offset.o(Lib_Comp_Auto_Acc_Offset_)
+    Lib_Comp_OnDemand_Acc_Offset_            0x10000988   Section        8  Lib_Comp_OnDemand_Acc_Offset.o(Lib_Comp_OnDemand_Acc_Offset_)
+    Lib_Comp_Pressure_                       0x10000990   Section        8  Lib_Comp_Pressure.o(Lib_Comp_Pressure_)
+    Lib_Comp_Reverse_Acceleration_           0x10000998   Section        8  Lib_Comp_Reverse_Acceleration.o(Lib_Comp_Reverse_Acceleration_)
+    Lib_Comp_Reverse_Pressure_               0x100009a0   Section        8  Lib_Comp_Reverse_Pressure.o(Lib_Comp_Reverse_Pressure_)
+    Lib_Diag_ADC_Check_                      0x100009a8   Section        8  Lib_Diag_ADC_Check.o(Lib_Diag_ADC_Check_)
+    Lib_Diag_RC_Osc_Chk_                     0x100009b0   Section       12  Lib_Diag_RC_Osc_Chk.o(Lib_Diag_RC_Osc_Chk_)
+    Lib_Fl_Change_UCS_Line_                  0x100009bc   Section        8  Lib_Fl_Change_UCS_Line.o(Lib_Fl_Change_UCS_Line_)
+    Lib_LF_Carrier_Mode_Config_              0x100009c4   Section        8  Lib_LF_Carrier_Mode_Config.o(Lib_LF_Carrier_Mode_Config_)
+    Lib_LF_Data_Mode_Config_                 0x100009cc   Section        8  Lib_LF_Data_Mode_Config.o(Lib_LF_Data_Mode_Config_)
+    Lib_LF_Data_Reception_                   0x100009d4   Section        8  Lib_LF_Data_Reception.o(Lib_LF_Data_Reception_)
+    Lib_Math_CRC16_Check_                    0x100009dc   Section        8  Lib_Math_CRC16_Check.o(Lib_Math_CRC16_Check_)
+    Lib_Math_CRC8_Calc_                      0x100009e4   Section        8  Lib_Math_CRC8_Calc.o(Lib_Math_CRC8_Calc_)
+    Lib_Math_Format_Measurement_             0x100009ec   Section        8  Lib_Math_Format_Measurement.o(Lib_Math_Format_Measurement_)
+    Lib_Math_Median_                         0x100009f4   Section        8  Lib_Math_Median.o(Lib_Math_Median_)
+    Lib_Math_Random_Gen_                     0x100009fc   Section        8  Lib_Math_Random_Gen.o(Lib_Math_Random_Gen_)
+    Lib_Math_SQRT_                           0x10000a04   Section        8  Lib_Math_SQRT.o(Lib_Math_SQRT_)
+    Lib_Meas_Acc_FIR_                        0x10000a0c   Section       12  Lib_Meas_Acc_FIR.o(Lib_Meas_Acc_FIR_)
+    Lib_Meas_Comp_SupplyV_                   0x10000a18   Section        8  Lib_Meas_Comp_SupplyV.o(Lib_Meas_Comp_SupplyV_)
+    Lib_Meas_Comp_Temp_                      0x10000a20   Section        8  Lib_Meas_Comp_Temp.o(Lib_Meas_Comp_Temp_)
+    Lib_Meas_Fast_Sample_                    0x10000a28   Section        8  Lib_Meas_Fast_Sample.o(Lib_Meas_Fast_Sample_)
+    Lib_Meas_MEIF_Config_                    0x10000a30   Section        8  Lib_Meas_MEIF_Config.o(Lib_Meas_MEIF_Config_)
+    Lib_Meas_Raw_Acceleration_               0x10000a38   Section        8  Lib_Meas_Raw_Acceleration.o(Lib_Meas_Raw_Acceleration_)
+    Lib_Meas_Raw_Pressure_                   0x10000a40   Section        8  Lib_Meas_Raw_Pressure.o(Lib_Meas_Raw_Pressure_)
+    Lib_RF_Config_Add_                       0x10000a48   Section       44  Lib_RF_Config_Add.o(Lib_RF_Config_Add_)
+    Lib_RF_Config_Basic_                     0x10000a74   Section       12  Lib_RF_Config_Basic.o(Lib_RF_Config_Basic_)
+    Lib_RF_Start_Init_Delay_                 0x10000a80   Section        8  Lib_RF_Start_Init_Delay.o(Lib_RF_Start_Init_Delay_)
+    Lib_RF_Testing_                          0x10000a88   Section        8  Lib_RF_Testing.o(Lib_RF_Testing_)
+    Lib_RF_Transmit_Frame_                   0x10000a90   Section        8  Lib_RF_Transmit_Frame.o(Lib_RF_Transmit_Frame_)
+    Lib_RF_VCO_Tuning_                       0x10000a98   Section        8  Lib_RF_VCO_Tuning.o(Lib_RF_VCO_Tuning_)
+    Lib_Serv_Hard_Fault_                     0x10000aa0   Section        8  Lib_Serv_Hard_Fault.o(Lib_Serv_Hard_Fault_)
+    Lib_Serv_Init_Interval_Timer_            0x10000aa8   Section        8  Lib_Serv_Init_Interval_Timer.o(Lib_Serv_Init_Interval_Timer_)
+    Lib_Serv_Read_ID_                        0x10000ab0   Section       28  Lib_Serv_Read_ID.o(Lib_Serv_Read_ID_)
+    Lib_Serv_Start_Xtal_Osc_                 0x10000acc   Section        8  Lib_Serv_Start_Xtal_Osc.o(Lib_Serv_Start_Xtal_Osc_)
+    Lib_Serv_Stop_Xtal_Osc_                  0x10000ad4   Section        8  Lib_Serv_Stop_Xtal_Osc.o(Lib_Serv_Stop_Xtal_Osc_)
+    Lib_State_LPM_Config_                    0x10000adc   Section       12  Lib_State_LPM_Config.o(Lib_State_LPM_Config_)
+    Lib_State_LPM_Start_                     0x10000ae8   Section        8  Lib_State_LPM_Start.o(Lib_State_LPM_Start_)
+    Lib_State_Low_Power_                     0x10000af0   Section        8  Lib_State_Low_Power.o(Lib_State_Low_Power_)
+    Lib_State_Thermal_Shutdown_              0x10000af8   Section        8  Lib_State_Thermal_Shutdown.o(Lib_State_Thermal_Shutdown_)
+    i.__scatterload_copy                     0x10000b00   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x10000b0e   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x10000b10   Section       14  handlers.o(i.__scatterload_zeroinit)
+    .ARM.__at_0x10000FFE                     0x10000ffe   Section        2  Core_Keep_Flash.o(.ARM.__at_0x10000FFE)
+    __tagsym$$used                           0x10000ffe   Number         0  Core_Keep_Flash.o(.ARM.__at_0x10000FFE)
+    CALIB_RW.ATIC172_WFC.16                  0x10001000   Section        2  Cfg_Types.o(CALIB_RW.ATIC172_WFC.16)
+    CALIB_RW.ATIC172_WFC.8                   0x10001002   Section        1  Cfg_Types.o(CALIB_RW.ATIC172_WFC.8)
+    .ARM.__at_0x1000101E                     0x1000101e   Section        2  Core_Keep_Flash.o(.ARM.__at_0x1000101E)
+    __tagsym$$used                           0x1000101e   Number         0  Core_Keep_Flash.o(.ARM.__at_0x1000101E)
+    CALIB_USRXFCN_RO.ATIC172_WFC             0x10001020   Section       16  App_RF_Request.o(CALIB_USRXFCN_RO.ATIC172_WFC)
+    AppData_RF_PrepareFrame_UserX            0x10001020   Data          16  App_RF_Request.o(CALIB_USRXFCN_RO.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10001030   Section        0  App_Acq.o(CODE.ATIC172_WFC)
+    AppCall_LPM_PermissionJob                0x10001031   Thumb Code    86  App_Acq.o(CODE.ATIC172_WFC)
+    CODE_USRXFCN_RO.ATIC172_WFC              0x100011f4   Section        0  App_RF_Request.o(CODE_USRXFCN_RO.ATIC172_WFC)
+    AppCall_FillBuffer_RF_FRAME_USER1        0x100011f5   Thumb Code   146  App_RF_Request.o(CODE_USRXFCN_RO.ATIC172_WFC)
+    AppCall_FillBuffer_RF_FRAME_USER2        0x10001287   Thumb Code   146  App_RF_Request.o(CODE_USRXFCN_RO.ATIC172_WFC)
+    CALIB_RO.ATIC172_WFC                     0x10001344   Section       60  App_LF_Command.o(CALIB_RO.ATIC172_WFC)
+    AppData_LFDs_LookUpCalls                 0x10001344   Data          60  App_LF_Command.o(CALIB_RO.ATIC172_WFC)
+    CALIB_RO.ATIC172_WFC                     0x10001380   Section       64  Cfg_Types.o(CALIB_RO.ATIC172_WFC)
+    CALIB_RO.ATIC172_WFC                     0x100013c0   Section       24  Cfg_Types.o(CALIB_RO.ATIC172_WFC)
+    CALIB_RO.ATIC172_WFC.16                  0x100013d8   Section       12  Core_Ang.o(CALIB_RO.ATIC172_WFC.16)
+    CoreData_AngleFilterA                    0x100013d8   Data           6  Core_Ang.o(CALIB_RO.ATIC172_WFC.16)
+    CoreData_AngleFilterB                    0x100013de   Data           6  Core_Ang.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x100013e4   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x100013e6   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x100013e8   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x100013ea   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x100013ec   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x100013ee   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x100013f0   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x100013f2   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x100013f4   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x100013f6   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x100013f8   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x100013fa   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x100013fc   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x100013fe   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x10001400   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x10001402   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x10001404   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x10001406   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x10001408   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x1000140a   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x1000140c   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x1000140e   Section       32  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x1000142e   Section       14  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x1000143c   Section       14  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.16                  0x1000144a   Section       10  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CALIB_RO.ATIC172_WFC.32                  0x10001454   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x10001458   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x1000145c   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x10001460   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x10001464   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x10001468   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x1000146c   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x10001470   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x10001474   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x10001478   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x1000147c   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x10001480   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x10001484   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x10001488   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x1000148c   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x10001490   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x10001494   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x10001498   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x1000149c   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x100014a0   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x100014a4   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x100014a8   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x100014ac   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x100014b0   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x100014b4   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x100014b8   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x100014bc   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x100014c0   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x100014c4   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x100014c8   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x100014cc   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x100014d0   Section        4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.32                  0x100014d4   Section       28  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CALIB_RO.ATIC172_WFC.8                   0x100014f0   Section      120  App_LF_Command.o(CALIB_RO.ATIC172_WFC.8)
+    AppData_LFDs_LookUpWUPs                  0x100014f0   Data          30  App_LF_Command.o(CALIB_RO.ATIC172_WFC.8)
+    AppData_LFDs_LookUpFEATUREs              0x1000150e   Data          15  App_LF_Command.o(CALIB_RO.ATIC172_WFC.8)
+    AppData_LFDs_LookUpDATALENs              0x1000151d   Data          15  App_LF_Command.o(CALIB_RO.ATIC172_WFC.8)
+    AppData_LFDs_LookUpDATAs                 0x1000152c   Data          60  App_LF_Command.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x10001568   Section      118  App_RF_Request.o(CALIB_RO.ATIC172_WFC.8)
+    AppData_RF_CanBeInhibited                0x10001568   Data           6  App_RF_Request.o(CALIB_RO.ATIC172_WFC.8)
+    AppData_RF_Priority                      0x1000156e   Data          16  App_RF_Request.o(CALIB_RO.ATIC172_WFC.8)
+    AppData_RF_USERx_FunctionCodes           0x1000157e   Data          96  App_RF_Request.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100015de   Section        8  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100015e6   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100015e7   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100015e8   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100015e9   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100015ea   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100015eb   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100015ec   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100015ed   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100015ee   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100015ef   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100015f0   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100015f1   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100015f2   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100015f3   Section       16  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x10001603   Section       16  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x10001613   Section       16  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x10001623   Section       16  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x10001633   Section        6  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x10001639   Section        6  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x1000163f   Section        6  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x10001645   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x10001647   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x10001649   Section        2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x1000164b   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x1000164c   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x1000164d   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x1000164e   Section        6  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x10001654   Section       12  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x10001660   Section       12  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x1000166c   Section       12  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x10001678   Section        6  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x1000167e   Section        6  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x10001684   Section        6  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x1000168a   Section        3  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x1000168d   Section       18  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x1000169f   Section        3  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100016a2   Section        3  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100016a5   Section        7  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100016ac   Section        7  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100016b3   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CALIB_RO.ATIC172_WFC.8                   0x100016b4   Section        1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x100016b8   Section        1  App_Acq.o(NVRAM_1.ATIC172_WFC.8)
+    UCS2_CRCLB                               0x100017fc   Section        4  system_SP49.o(UCS2_CRCLB)
+    __tagsym$$used                           0x100017fc   Number         0  system_SP49.o(UCS2_CRCLB)
+    CODE.ATIC172_WFC                         0x10001800   Section        0  Core_Task_Init.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10001860   Section        0  Core_Task_Events.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10001944   Section        0  Core_Acq.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10001a28   Section        0  Core_Acq_Pressure.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10001b24   Section        0  Core_Acq_Temperature.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10001bd0   Section        0  Core_Acq_Acceleration.o(CODE.ATIC172_WFC)
+    CoreCall_AccelerationCompensationForPCBAngle 0x10001f51   Thumb Code    28  Core_Acq_Acceleration.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10001fb0   Section        0  Core_Acq_ExternalWakeup.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10001fb4   Section        0  Core_Acq_Voltage.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10002010   Section        0  Core_Ang.o(CODE.ATIC172_WFC)
+    CoreCall_ComputeAccelSRx                 0x100024ef   Thumb Code    22  Core_Ang.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10002514   Section        0  Core_TM.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10002624   Section        0  Core_TM_Interval.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x1000278c   Section        0  Core_TM_Delay.o(CODE.ATIC172_WFC)
+    CoreCall_GPTimer_Start                   0x1000278d   Thumb Code   144  Core_TM_Delay.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10002908   Section        0  Core_TM_LPM.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10002a64   Section        0  Core_Diag.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10002b0c   Section        0  Core_Diag_ATIC.o(CODE.ATIC172_WFC)
+    CoreCall_PerformSelfDiag_XTAL            0x10002b0d   Thumb Code   134  Core_Diag_ATIC.o(CODE.ATIC172_WFC)
+    CoreCall_PerformSelfDiag_ADC             0x10002b9f   Thumb Code    76  Core_Diag_ATIC.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10002bfc   Section        0  Core_Diag_Platform.o(CODE.ATIC172_WFC)
+    CoreCall_PerformSelfDiag_FLASH           0x10002bfd   Thumb Code   176  Core_Diag_Platform.o(CODE.ATIC172_WFC)
+    CoreCall_PerformSelfDiag_RAM             0x10002cbf   Thumb Code   148  Core_Diag_Platform.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10002d8c   Section        0  Core_LF.o(CODE.ATIC172_WFC)
+    CoreCall_LF_SetPatterns                  0x10002d8d   Thumb Code   184  Core_LF.o(CODE.ATIC172_WFC)
+    CoreCall_LF_SetMode_Wrapped              0x10002e45   Thumb Code   316  Core_LF.o(CODE.ATIC172_WFC)
+    CoreCall_LF_StateMachine                 0x10002f81   Thumb Code   246  Core_LF.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10003268   Section        0  Core_RF.o(CODE.ATIC172_WFC)
+    CoreCall_RF_SendBuffer                   0x100032e3   Thumb Code    80  Core_RF.o(CODE.ATIC172_WFC)
+    CoreCall_RF_SendFrame_Wrapped            0x10003333   Thumb Code   208  Core_RF.o(CODE.ATIC172_WFC)
+    CoreCall_RF_SendWUP_Wrapped              0x10003403   Thumb Code   110  Core_RF.o(CODE.ATIC172_WFC)
+    CoreCall_RF_FillChecksum                 0x1000352d   Thumb Code   108  Core_RF.o(CODE.ATIC172_WFC)
+    CoreCall_RF_PerformCW                    0x10003599   Thumb Code    98  Core_RF.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x1000366c   Section        0  Core_Keep.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x100036f8   Section        0  Core_Keep_Flash.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10003838   Section        0  Core_Keep_NVRAM.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10003908   Section        0  App_Acq_Pressure.o(CODE.ATIC172_WFC)
+    AppCall_RestartPressure                  0x1000396b   Thumb Code   116  App_Acq_Pressure.o(CODE.ATIC172_WFC)
+    AppCall_FormatPressure                   0x100039df   Thumb Code   140  App_Acq_Pressure.o(CODE.ATIC172_WFC)
+    AppCall_GetPressure                      0x10003a9f   Thumb Code    36  App_Acq_Pressure.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10003b1c   Section        0  App_Acq_Temperature.o(CODE.ATIC172_WFC)
+    AppCall_FormatTemperature                0x10003b89   Thumb Code   140  App_Acq_Temperature.o(CODE.ATIC172_WFC)
+    AppCall_RestartTemperature               0x10003c6f   Thumb Code    72  App_Acq_Temperature.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10003cf4   Section        0  App_Acq_Acceleration.o(CODE.ATIC172_WFC)
+    AppCall_RestartAcceleration              0x10003d97   Thumb Code    90  App_Acq_Acceleration.o(CODE.ATIC172_WFC)
+    AppCall_FormatAcceleration               0x10003df1   Thumb Code    68  App_Acq_Acceleration.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10003e84   Section        0  App_Acq_Voltage.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10003f3c   Section        0  App_Delta.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10003fb8   Section        0  App_Delta_Angle.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10004000   Section        0  App_Delta_Motion.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x1000409c   Section        0  App_Delta_Pressure.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10004338   Section        0  App_Delta_Battery.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10004374   Section        0  App_LF.o(CODE.ATIC172_WFC)
+    AppCall_LF_ProcessDetectionEvents        0x1000438f   Thumb Code    68  App_LF.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x100043dc   Section        0  App_LF_Command.o(CODE.ATIC172_WFC)
+    AppCall_LFD_Force_RF_USER1               0x100044f1   Thumb Code    10  App_LF_Command.o(CODE.ATIC172_WFC)
+    AppCall_LFD_Force_MP                     0x100044fb   Thumb Code    16  App_LF_Command.o(CODE.ATIC172_WFC)
+    AppCall_LFD_Force_MS                     0x1000450b   Thumb Code    16  App_LF_Command.o(CODE.ATIC172_WFC)
+    AppCall_LFD_Force_RF_SW_IDENTIFICATION   0x1000451b   Thumb Code    10  App_LF_Command.o(CODE.ATIC172_WFC)
+    AppCall_LFD_Force_RF_ASSEMBLY            0x10004525   Thumb Code    10  App_LF_Command.o(CODE.ATIC172_WFC)
+    AppCall_LFD_Force_Tire_Assembly          0x1000452f   Thumb Code    36  App_LF_Command.o(CODE.ATIC172_WFC)
+    AppCall_LFD_Individual_Test_Activation   0x10004553   Thumb Code    20  App_LF_Command.o(CODE.ATIC172_WFC)
+    AppCall_LFD_Individual_Force_MP          0x10004567   Thumb Code    10  App_LF_Command.o(CODE.ATIC172_WFC)
+    AppCall_LFD_Individual_Force_MS          0x10004571   Thumb Code    10  App_LF_Command.o(CODE.ATIC172_WFC)
+    AppCall_LFD_Individual_RF_CW_LOW_LONG    0x1000457b   Thumb Code    10  App_LF_Command.o(CODE.ATIC172_WFC)
+    AppCall_LFD_Individual_Force_MM          0x10004585   Thumb Code    10  App_LF_Command.o(CODE.ATIC172_WFC)
+    AppCall_LFD_Individual_Force_Delivery    0x1000458f   Thumb Code    24  App_LF_Command.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x100045cc   Section        0  App_Mode.o(CODE.ATIC172_WFC)
+    AppCall_Mode_Job                         0x100045f1   Thumb Code   130  App_Mode.o(CODE.ATIC172_WFC)
+    AppCall_WriteInFlash                     0x1000471b   Thumb Code   108  App_Mode.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x100047cc   Section        0  App_Mode_Actions.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10004a1c   Section        0  App_Mode_History.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10004a20   Section        0  App_Mode_Reset.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10004ad8   Section        0  App_Mode_Diag.o(CODE.ATIC172_WFC)
+    AppCall_StartTimer_SelfDiagCycle         0x10004ad9   Thumb Code    56  App_Mode_Diag.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10004c18   Section        0  App_RF.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x10004c5c   Section        0  App_RF_Request.o(CODE.ATIC172_WFC)
+    AppCall_RF_TimerDelays                   0x10004d4d   Thumb Code    48  App_RF_Request.o(CODE.ATIC172_WFC)
+    AppCall_PreActions_RF_FRAME_USER1        0x10004f39   Thumb Code    24  App_RF_Request.o(CODE.ATIC172_WFC)
+    AppCall_PreActions_RF_FRAME_USER2        0x10004f51   Thumb Code    24  App_RF_Request.o(CODE.ATIC172_WFC)
+    AppCall_PreActions_RF_FRAME_DIAGNOSIS    0x10004f69   Thumb Code    14  App_RF_Request.o(CODE.ATIC172_WFC)
+    AppCall_FillBuffer_RF_FRAME_DIAGNOSIS    0x10004f77   Thumb Code   350  App_RF_Request.o(CODE.ATIC172_WFC)
+    AppCall_PreActions_RF_FRAME_IDENTIFICATION 0x100050d5   Thumb Code     2  App_RF_Request.o(CODE.ATIC172_WFC)
+    AppCall_FillBuffer_RF_FRAME_IDENTIFICATION 0x100050d7   Thumb Code    90  App_RF_Request.o(CODE.ATIC172_WFC)
+    AppCall_PreActions_RF_FRAME_ASSEMBLY     0x10005131   Thumb Code    14  App_RF_Request.o(CODE.ATIC172_WFC)
+    AppCall_FillBuffer_RF_FRAME_ASSEMBLY     0x1000513f   Thumb Code    88  App_RF_Request.o(CODE.ATIC172_WFC)
+    AppCall_RF_AntiCollision                 0x1000520b   Thumb Code   134  App_RF_Request.o(CODE.ATIC172_WFC)
+    CODE.ATIC172_WFC                         0x100052f4   Section        0  App_RF_Data.o(CODE.ATIC172_WFC)
+    i.__ARM_common_switch8                   0x10005314   Section        0  App_Acq_Pressure.o(i.__ARM_common_switch8)
+    CONST.ATIC172_WFC                        0x10005330   Section       32  App_RF_Request.o(CONST.ATIC172_WFC)
+    AppData_RF_PrepareFrame_Internal         0x10005330   Data          32  App_RF_Request.o(CONST.ATIC172_WFC)
+    CONST.SWID                               0x100053f0   Section        2  Core_Keep_Flash.o(CONST.SWID)
+    CoreData_SW_GEN_IDentifier               0x100053f0   Data           2  Core_Keep_Flash.o(CONST.SWID)
+    CONST.SWID                               0x100053f2   Section        1  App_RF_Data.o(CONST.SWID)
+    CONST.SWID                               0x100053f3   Section        1  App_RF_Data.o(CONST.SWID)
+    CONST.SWID                               0x100053f4   Section        7  App_RF_Data.o(CONST.SWID)
+    CODE_CRCLB                               0x100053fc   Section        4  system_SP49.o(CODE_CRCLB)
+    __tagsym$$used                           0x100053fc   Number         0  system_SP49.o(CODE_CRCLB)
+    STACK                                    0x20000000   Section      512  startup_SP49.o(STACK)
+    STACK_GUARD                              0x20000200   Section        4  Core_Task_Events.o(STACK_GUARD)
+    RAM_0.ATIC172_WFC.8                      0x20000204   Section        1  App_RF_Request.o(RAM_0.ATIC172_WFC.8)
+    AppData_RF_FrameCnt                      0x20000204   Data           1  App_RF_Request.o(RAM_0.ATIC172_WFC.8)
+    UCS1_CRCLB                               0x20000206   Section        4  system_SP49.o(UCS1_CRCLB)
+    __tagsym$$used                           0x20000206   Number         0  system_SP49.o(UCS1_CRCLB)
+    RAM_0.ATIC172_WFC                        0x2000020c   Section       20  Core_RF.o(RAM_0.ATIC172_WFC)
+    CoreData_RF_FrameStruct                  0x2000020c   Data          20  Core_RF.o(RAM_0.ATIC172_WFC)
+    RAM_0.ATIC172_WFC.16                     0x20000220   Section        6  Core_Acq_Acceleration.o(RAM_0.ATIC172_WFC.16)
+    RAM_0.ATIC172_WFC.16                     0x20000226   Section        2  Core_Acq_Voltage.o(RAM_0.ATIC172_WFC.16)
+    RAM_0.ATIC172_WFC.16                     0x20000228   Section       18  Core_Ang.o(RAM_0.ATIC172_WFC.16)
+    CoreData_AngleFilterZ                    0x20000228   Data          18  Core_Ang.o(RAM_0.ATIC172_WFC.16)
+    RAM_0.ATIC172_WFC.16                     0x2000023a   Section       24  Core_TM_Interval.o(RAM_0.ATIC172_WFC.16)
+    CoreData_ITSTATUS_DuringRun              0x2000023a   Data          24  Core_TM_Interval.o(RAM_0.ATIC172_WFC.16)
+    RAM_0.ATIC172_WFC.32                     0x20000254   Section        4  Core_Task_Init.o(RAM_0.ATIC172_WFC.32)
+    RAM_0.ATIC172_WFC.32                     0x20000258   Section        4  Core_Task_Events.o(RAM_0.ATIC172_WFC.32)
+    RAM_0.ATIC172_WFC.32                     0x2000025c   Section        8  Core_Acq_Acceleration.o(RAM_0.ATIC172_WFC.32)
+    RAM_0.ATIC172_WFC.32                     0x20000264   Section        4  Core_Acq_Voltage.o(RAM_0.ATIC172_WFC.32)
+    RAM_0.ATIC172_WFC.32                     0x20000268   Section        4  Core_Diag_ATIC.o(RAM_0.ATIC172_WFC.32)
+    RAM_0.ATIC172_WFC.32                     0x2000026c   Section        4  Core_RF.o(RAM_0.ATIC172_WFC.32)
+    CoreData_RF_WAIT_ST                      0x2000026c   Data           4  Core_RF.o(RAM_0.ATIC172_WFC.32)
+    RAM_0.ATIC172_WFC.32                     0x20000270   Section        8  App_Mode.o(RAM_0.ATIC172_WFC.32)
+    AppData_RF_Timeouts_BAK                  0x20000274   Data           4  App_Mode.o(RAM_0.ATIC172_WFC.32)
+    RAM_0.ATIC172_WFC.8                      0x20000278   Section        1  Core_Acq_Pressure.o(RAM_0.ATIC172_WFC.8)
+    RAM_0.ATIC172_WFC.8                      0x20000279   Section        2  Core_Acq_Temperature.o(RAM_0.ATIC172_WFC.8)
+    RAM_0.ATIC172_WFC.8                      0x2000027b   Section        1  Core_Acq_Acceleration.o(RAM_0.ATIC172_WFC.8)
+    RAM_0.ATIC172_WFC.8                      0x2000027c   Section        1  Core_Acq_Voltage.o(RAM_0.ATIC172_WFC.8)
+    RAM_0.ATIC172_WFC.8                      0x2000027d   Section        3  Core_TM_LPM.o(RAM_0.ATIC172_WFC.8)
+    RAM_0.ATIC172_WFC.8                      0x20000280   Section        1  Core_LF.o(RAM_0.ATIC172_WFC.8)
+    CoreData_LF_ReConfiguration              0x20000280   Data           1  Core_LF.o(RAM_0.ATIC172_WFC.8)
+    RAM_0.ATIC172_WFC.8                      0x20000281   Section       34  Core_RF.o(RAM_0.ATIC172_WFC.8)
+    CoreData_RF_SOM_Buffer                   0x20000281   Data           1  Core_RF.o(RAM_0.ATIC172_WFC.8)
+    CoreData_RF_EOM_Buffer                   0x20000282   Data           1  Core_RF.o(RAM_0.ATIC172_WFC.8)
+    CoreData_RF_DataBuffer                   0x20000283   Data          32  Core_RF.o(RAM_0.ATIC172_WFC.8)
+    RAM_0.ATIC172_WFC.8                      0x200002a3   Section        1  Core_Keep.o(RAM_0.ATIC172_WFC.8)
+    CoreData_WriteInFlash_Trigger            0x200002a3   Data           1  Core_Keep.o(RAM_0.ATIC172_WFC.8)
+    RAM_0.ATIC172_WFC.8                      0x200002a4   Section        2  App_Acq_Pressure.o(RAM_0.ATIC172_WFC.8)
+    RAM_0.ATIC172_WFC.8                      0x200002a6   Section        1  App_Acq_Temperature.o(RAM_0.ATIC172_WFC.8)
+    RAM_0.ATIC172_WFC.8                      0x200002a7   Section        1  App_Acq_Acceleration.o(RAM_0.ATIC172_WFC.8)
+    RAM_0.ATIC172_WFC.8                      0x200002a8   Section        1  App_Acq_Voltage.o(RAM_0.ATIC172_WFC.8)
+    RAM_0.ATIC172_WFC.8                      0x200002a9   Section        1  App_Mode_Actions.o(RAM_0.ATIC172_WFC.8)
+    RAM_0.ATIC172_WFC.8                      0x200002aa   Section       16  App_RF_Request.o(RAM_0.ATIC172_WFC.8)
+    AppData_RF_InterFrames                   0x200002aa   Data          16  App_RF_Request.o(RAM_0.ATIC172_WFC.8)
+    NVRAM_1.NV1_Marker                       0x30000000   Section        1  Core_Keep_NVRAM.o(NVRAM_1.NV1_Marker)
+    CoreData_Marker_of_NVRAM_1               0x30000000   Data           1  Core_Keep_NVRAM.o(NVRAM_1.NV1_Marker)
+    __tagsym$$used                           0x30000000   Number         0  Core_Keep_NVRAM.o(NVRAM_1.NV1_Marker)
+    NVRAM_1.ATIC172_WFC.16                   0x30000002   Section        2  Core_Acq_Pressure.o(NVRAM_1.ATIC172_WFC.16)
+    NVRAM_1.ATIC172_WFC.16                   0x30000004   Section        4  Core_Acq_Temperature.o(NVRAM_1.ATIC172_WFC.16)
+    NVRAM_1.ATIC172_WFC.16                   0x30000008   Section        4  Core_TM_Interval.o(NVRAM_1.ATIC172_WFC.16)
+    CoreData_ITSTATUS_AtPowerDown            0x30000008   Data           2  Core_TM_Interval.o(NVRAM_1.ATIC172_WFC.16)
+    CoreData_PrecounterBank                  0x3000000a   Data           2  Core_TM_Interval.o(NVRAM_1.ATIC172_WFC.16)
+    NVRAM_1.ATIC172_WFC.16                   0x3000000c   Section        6  Core_TM_LPM.o(NVRAM_1.ATIC172_WFC.16)
+    NVRAM_1.ATIC172_WFC.16                   0x30000012   Section        2  App_Acq_Pressure.o(NVRAM_1.ATIC172_WFC.16)
+    NVRAM_1.ATIC172_WFC.16                   0x30000014   Section        4  App_Acq_Temperature.o(NVRAM_1.ATIC172_WFC.16)
+    AppData_TemperatureDiagRef               0x30000016   Data           2  App_Acq_Temperature.o(NVRAM_1.ATIC172_WFC.16)
+    NVRAM_1.ATIC172_WFC.16                   0x30000018   Section        4  App_Acq_Acceleration.o(NVRAM_1.ATIC172_WFC.16)
+    NVRAM_1.ATIC172_WFC.16                   0x3000001c   Section        2  App_Acq_Voltage.o(NVRAM_1.ATIC172_WFC.16)
+    NVRAM_1.ATIC172_WFC.16                   0x3000001e   Section        2  Cfg_Types.o(NVRAM_1.ATIC172_WFC.16)
+    NVRAM_1.ATIC172_WFC.32                   0x30000020   Section        4  Core_Acq_Pressure.o(NVRAM_1.ATIC172_WFC.32)
+    NVRAM_1.ATIC172_WFC.32                   0x30000024   Section        4  Core_Acq_Temperature.o(NVRAM_1.ATIC172_WFC.32)
+    NVRAM_1.ATIC172_WFC.32                   0x30000028   Section        4  Core_Diag.o(NVRAM_1.ATIC172_WFC.32)
+    CoreData_ResetCause                      0x30000028   Data           4  Core_Diag.o(NVRAM_1.ATIC172_WFC.32)
+    NVRAM_1.ATIC172_WFC.32                   0x3000002c   Section        4  App_Mode_Actions.o(NVRAM_1.ATIC172_WFC.32)
+    NVRAM_1.ATIC172_WFC.32                   0x30000030   Section        4  App_Mode_Diag.o(NVRAM_1.ATIC172_WFC.32)
+    NVRAM_1.ATIC172_WFC.8                    0x30000034   Section        1  Core_Ang.o(NVRAM_1.ATIC172_WFC.8)
+    CoreData_PAL_Index                       0x30000034   Data           1  Core_Ang.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x30000035   Section        1  Core_Diag_Platform.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x30000036   Section        1  Core_LF.o(NVRAM_1.ATIC172_WFC.8)
+    CoreData_LF_Mode                         0x30000036   Data           1  Core_LF.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x30000037   Section        3  App_Acq_Pressure.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x3000003a   Section        3  App_Acq_Temperature.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x3000003d   Section        3  App_Acq_Acceleration.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x30000040   Section        1  App_Acq_Voltage.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x30000041   Section        3  App_Delta_Angle.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x30000044   Section        1  App_Delta_Motion.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x30000045   Section        4  App_Delta_Pressure.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x30000049   Section        2  App_Delta_Battery.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x3000004b   Section        1  App_LF_Command.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x3000004c   Section        4  App_Mode.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_Nb_FlashWriting_Counter          0x3000004c   Data           4  App_Mode.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x30000050   Section        2  App_Mode_Actions.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x30000052   Section        2  App_Mode_Diag.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_SELFDIAG_ERROR_CTR               0x30000053   Data           1  App_Mode_Diag.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x30000054   Section        6  App_RF_Request.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_Ongoing_RF_Mode                  0x30000056   Data           1  App_RF_Request.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_Prepare_RF_Mode                  0x30000057   Data           1  App_RF_Request.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x3000005a   Section       17  App_RF_Data.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.8                    0x3000006b   Section        1  Cfg_Types.o(NVRAM_1.ATIC172_WFC.8)
+    NVRAM_1.ATIC172_WFC.16                   0x3000006c   Section       24  Core_TM_Interval.o(NVRAM_1.ATIC172_WFC.16)
+    NVRAM_1.NV1_Checksum                     0x30000084   Section        2  Core_Keep_NVRAM.o(NVRAM_1.NV1_Checksum)
+    CoreData_CRC16_of_NVRAM_1                0x30000084   Data           2  Core_Keep_NVRAM.o(NVRAM_1.NV1_Checksum)
+    __tagsym$$used                           0x30000084   Number         0  Core_Keep_NVRAM.o(NVRAM_1.NV1_Checksum)
+    NVRAM_2.NV2_Marker                       0x30000086   Section        1  Core_Keep_NVRAM.o(NVRAM_2.NV2_Marker)
+    CoreData_Marker_of_NVRAM_2               0x30000086   Data           1  Core_Keep_NVRAM.o(NVRAM_2.NV2_Marker)
+    __tagsym$$used                           0x30000086   Number         0  Core_Keep_NVRAM.o(NVRAM_2.NV2_Marker)
+    NVRAM_2.ATIC172_WFC.32                   0x30000088   Section        4  App_Mode_Reset.o(NVRAM_2.ATIC172_WFC.32)
+    AppData_TestActivation                   0x30000088   Data           4  App_Mode_Reset.o(NVRAM_2.ATIC172_WFC.32)
+    NVRAM_2.ATIC172_WFC.8                    0x3000008c   Section        1  Core_Task_Events.o(NVRAM_2.ATIC172_WFC.8)
+    CoreData_Launch1sPowerDown               0x3000008c   Data           1  Core_Task_Events.o(NVRAM_2.ATIC172_WFC.8)
+    NVRAM_2.ATIC172_WFC.8                    0x3000008d   Section        1  App_Acq_Acceleration.o(NVRAM_2.ATIC172_WFC.8)
+    NVRAM_2.ATIC172_WFC.8                    0x3000008e   Section        2  App_LF_Command.o(NVRAM_2.ATIC172_WFC.8)
+    NVRAM_2.ATIC172_WFC.8                    0x30000090   Section        1  App_Mode_Diag.o(NVRAM_2.ATIC172_WFC.8)
+    NVRAM_2.NV2_Checksum                     0x30000092   Section        2  Core_Keep_NVRAM.o(NVRAM_2.NV2_Checksum)
+    CoreData_CRC16_of_NVRAM_2                0x30000092   Data           2  Core_Keep_NVRAM.o(NVRAM_2.NV2_Checksum)
+    __tagsym$$used                           0x30000092   Number         0  Core_Keep_NVRAM.o(NVRAM_2.NV2_Checksum)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  Core_Task_Init.o ABSOLUTE
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    CurrentConfiguration                     0x10000800   Data          32  system_SP49.o(FLASH_CONFIG)
+    __main                                   0x10000829   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x10000829   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x1000082d   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x10000831   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x10000831   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x10000831   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x10000831   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x10000839   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x10000839   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    __aeabi_uidiv                            0x1000083d   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x1000083d   Thumb Code    44  uidiv.o(.text)
+    __aeabi_idiv                             0x10000869   Thumb Code     0  idiv.o(.text)
+    __aeabi_idivmod                          0x10000869   Thumb Code    40  idiv.o(.text)
+    __aeabi_memcpy                           0x10000891   Thumb Code    36  memcpya.o(.text)
+    __aeabi_memcpy4                          0x10000891   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memcpy8                          0x10000891   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memset                           0x100008b5   Thumb Code    14  memseta.o(.text)
+    __aeabi_memset4                          0x100008b5   Thumb Code     0  memseta.o(.text)
+    __aeabi_memset8                          0x100008b5   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr                           0x100008c3   Thumb Code     4  memseta.o(.text)
+    __aeabi_memclr4                          0x100008c3   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr8                          0x100008c3   Thumb Code     0  memseta.o(.text)
+    _memset$wrapper                          0x100008c7   Thumb Code    18  memseta.o(.text)
+    memcmp                                   0x100008d9   Thumb Code    26  memcmp.o(.text)
+    __scatterload                            0x100008f5   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x100008f5   Thumb Code     0  init.o(.text)
+    __decompress                             0x10000919   Thumb Code     0  __dczerorl.o(.text)
+    __decompress0                            0x10000919   Thumb Code    58  __dczerorl.o(.text)
+    Lib_Calib_GP_Timer                       0x10000955   Thumb Code     8  Lib_Calib_GP_Timer.o(Lib_Calib_GP_Timer_)
+    Lib_Calib_LF_OnOff_Timer                 0x1000095d   Thumb Code     8  Lib_Calib_LF_OnOff_Timer.o(Lib_Calib_LF_OnOff_Timer_)
+    Lib_Calib_Precounter                     0x10000969   Thumb Code     8  Lib_Calib_Precounter.o(Lib_Calib_Precounter_)
+    Lib_Calib_Sample_Timer                   0x10000971   Thumb Code     8  Lib_Calib_Sample_Timer.o(Lib_Calib_Sample_Timer_)
+    Lib_Comp_Acceleration                    0x10000979   Thumb Code     8  Lib_Comp_Acceleration.o(Lib_Comp_Acceleration_)
+    Lib_Comp_Auto_Acc_Offset                 0x10000981   Thumb Code     8  Lib_Comp_Auto_Acc_Offset.o(Lib_Comp_Auto_Acc_Offset_)
+    Lib_Comp_OnDemand_Acc_Offset             0x10000989   Thumb Code     8  Lib_Comp_OnDemand_Acc_Offset.o(Lib_Comp_OnDemand_Acc_Offset_)
+    Lib_Comp_Pressure                        0x10000991   Thumb Code     8  Lib_Comp_Pressure.o(Lib_Comp_Pressure_)
+    Lib_Comp_Reverse_Acceleration            0x10000999   Thumb Code     8  Lib_Comp_Reverse_Acceleration.o(Lib_Comp_Reverse_Acceleration_)
+    Lib_Comp_Reverse_Pressure                0x100009a1   Thumb Code     8  Lib_Comp_Reverse_Pressure.o(Lib_Comp_Reverse_Pressure_)
+    Lib_Diag_ADC_Check                       0x100009a9   Thumb Code     8  Lib_Diag_ADC_Check.o(Lib_Diag_ADC_Check_)
+    Lib_Diag_RC_Osc_Chk                      0x100009b1   Thumb Code     8  Lib_Diag_RC_Osc_Chk.o(Lib_Diag_RC_Osc_Chk_)
+    Lib_Fl_Change_UCS_Line                   0x100009bd   Thumb Code     8  Lib_Fl_Change_UCS_Line.o(Lib_Fl_Change_UCS_Line_)
+    Lib_LF_Carrier_Mode_Config               0x100009c5   Thumb Code     8  Lib_LF_Carrier_Mode_Config.o(Lib_LF_Carrier_Mode_Config_)
+    Lib_LF_Data_Mode_Config                  0x100009cd   Thumb Code     8  Lib_LF_Data_Mode_Config.o(Lib_LF_Data_Mode_Config_)
+    Lib_LF_Data_Reception                    0x100009d5   Thumb Code     8  Lib_LF_Data_Reception.o(Lib_LF_Data_Reception_)
+    Lib_Math_CRC16_Check                     0x100009dd   Thumb Code     8  Lib_Math_CRC16_Check.o(Lib_Math_CRC16_Check_)
+    Lib_Math_CRC8_Calc                       0x100009e5   Thumb Code     8  Lib_Math_CRC8_Calc.o(Lib_Math_CRC8_Calc_)
+    Lib_Math_Format_Measurement              0x100009ed   Thumb Code     8  Lib_Math_Format_Measurement.o(Lib_Math_Format_Measurement_)
+    Lib_Math_Median                          0x100009f5   Thumb Code     8  Lib_Math_Median.o(Lib_Math_Median_)
+    Lib_Math_Random_Gen                      0x100009fd   Thumb Code     8  Lib_Math_Random_Gen.o(Lib_Math_Random_Gen_)
+    Lib_Math_SQRT                            0x10000a05   Thumb Code     8  Lib_Math_SQRT.o(Lib_Math_SQRT_)
+    Lib_Meas_Acc_FIR                         0x10000a0d   Thumb Code     8  Lib_Meas_Acc_FIR.o(Lib_Meas_Acc_FIR_)
+    Lib_Meas_Comp_SupplyV                    0x10000a19   Thumb Code     8  Lib_Meas_Comp_SupplyV.o(Lib_Meas_Comp_SupplyV_)
+    Lib_Meas_Comp_Temp                       0x10000a21   Thumb Code     8  Lib_Meas_Comp_Temp.o(Lib_Meas_Comp_Temp_)
+    Lib_Meas_Fast_Sample                     0x10000a29   Thumb Code     8  Lib_Meas_Fast_Sample.o(Lib_Meas_Fast_Sample_)
+    Lib_Meas_MEIF_Config                     0x10000a31   Thumb Code     8  Lib_Meas_MEIF_Config.o(Lib_Meas_MEIF_Config_)
+    Lib_Meas_Raw_Acceleration                0x10000a39   Thumb Code     8  Lib_Meas_Raw_Acceleration.o(Lib_Meas_Raw_Acceleration_)
+    Lib_Meas_Raw_Pressure                    0x10000a41   Thumb Code     8  Lib_Meas_Raw_Pressure.o(Lib_Meas_Raw_Pressure_)
+    Lib_RF_Config_Add                        0x10000a49   Thumb Code    36  Lib_RF_Config_Add.o(Lib_RF_Config_Add_)
+    Lib_RF_Config_Basic                      0x10000a75   Thumb Code     8  Lib_RF_Config_Basic.o(Lib_RF_Config_Basic_)
+    Lib_RF_Start_Init_Delay                  0x10000a81   Thumb Code     8  Lib_RF_Start_Init_Delay.o(Lib_RF_Start_Init_Delay_)
+    Lib_RF_Testing                           0x10000a89   Thumb Code     8  Lib_RF_Testing.o(Lib_RF_Testing_)
+    Lib_RF_Transmit_Frame                    0x10000a91   Thumb Code     8  Lib_RF_Transmit_Frame.o(Lib_RF_Transmit_Frame_)
+    Lib_RF_VCO_Tuning                        0x10000a99   Thumb Code     8  Lib_RF_VCO_Tuning.o(Lib_RF_VCO_Tuning_)
+    Lib_Serv_Hard_Fault                      0x10000aa1   Thumb Code     8  Lib_Serv_Hard_Fault.o(Lib_Serv_Hard_Fault_)
+    Lib_Serv_Init_Interval_Timer             0x10000aa9   Thumb Code     8  Lib_Serv_Init_Interval_Timer.o(Lib_Serv_Init_Interval_Timer_)
+    Lib_Serv_Read_ID                         0x10000ab1   Thumb Code    22  Lib_Serv_Read_ID.o(Lib_Serv_Read_ID_)
+    Lib_Serv_Start_Xtal_Osc                  0x10000acd   Thumb Code     8  Lib_Serv_Start_Xtal_Osc.o(Lib_Serv_Start_Xtal_Osc_)
+    Lib_Serv_Stop_Xtal_Osc                   0x10000ad5   Thumb Code     8  Lib_Serv_Stop_Xtal_Osc.o(Lib_Serv_Stop_Xtal_Osc_)
+    Lib_State_LPM_Config                     0x10000add   Thumb Code     8  Lib_State_LPM_Config.o(Lib_State_LPM_Config_)
+    Lib_State_LPM_Start                      0x10000ae9   Thumb Code     8  Lib_State_LPM_Start.o(Lib_State_LPM_Start_)
+    Lib_State_Low_Power                      0x10000af1   Thumb Code     8  Lib_State_Low_Power.o(Lib_State_Low_Power_)
+    Lib_State_Thermal_Shutdown               0x10000af9   Thumb Code     8  Lib_State_Thermal_Shutdown.o(Lib_State_Thermal_Shutdown_)
+    __scatterload_copy                       0x10000b01   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x10000b0f   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x10000b11   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    Region$$Table$$Base                      0x10000b20   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x10000b50   Number         0  anon$$obj.o(Region$$Table)
+    CoreData_CRC16_of_BootSector             0x10000ffe   Data           2  Core_Keep_Flash.o(.ARM.__at_0x10000FFE)
+    CfgData_WriteInFlash_C_DEFAULT_OFFSET    0x10001000   Data           2  Cfg_Types.o(CALIB_RW.ATIC172_WFC.16)
+    CfgData_WriteInFlash_C_RDY_MODE          0x10001002   Data           1  Cfg_Types.o(CALIB_RW.ATIC172_WFC.8)
+    CoreData_CRC16_of_WriteInFlash           0x1000101e   Data           2  Core_Keep_Flash.o(.ARM.__at_0x1000101E)
+    AppCall_Acq_Job                          0x10001087   Thumb Code   256  App_Acq.o(CODE.ATIC172_WFC)
+    CfgData_RefList_RF_REQs_BURST_T          0x10001380   Data          64  Cfg_Types.o(CALIB_RO.ATIC172_WFC)
+    CfgData_RefList_RF_BURSTs_INTER_FR       0x100013c0   Data          24  Cfg_Types.o(CALIB_RO.ATIC172_WFC)
+    CfgData_C_LPM_DP_THD                     0x100013e4   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_C_LPM_DT_THD                     0x100013e6   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_C_LPM_DA_THD                     0x100013e8   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_C_TS_HOT_E                       0x100013ea   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_C_TS_COLD_E                      0x100013ec   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RF_REQ_FORCE_MP_BURST_T          0x100013ee   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RF_REQ_FORCE_MS_BURST_T          0x100013f0   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RF_REQ_FORCE_USER1_BURST_T       0x100013f2   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RF_REQ_DIAGNOSIS_BURST_T         0x100013f4   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RF_REQ_SW_IDENTIFICATION_BURST_T 0x100013f6   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RF_REQ_ASSEMBLY_BURST_T          0x100013f8   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RF_REQ_PERIODIC_MFB_BURST_T      0x100013fa   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RF_REQ_PERIODIC_NOMOTION_BURST_T 0x100013fc   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RF_REQ_PERIODIC_MOTION_BURST_T   0x100013fe   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RF_REQ_PV_NOMOTION_BURST_T       0x10001400   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RF_REQ_PV_MOTION_BURST_T         0x10001402   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RF_REQ_PG_NOMOTION_BURST_T       0x10001404   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RF_REQ_PG_MOTION_BURST_T         0x10001406   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RF_REQ_PA_NOMOTION_BURST_T       0x10001408   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RF_REQ_PA_MOTION_BURST_T         0x1000140a   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RF_REQ_RFCW_BURST_T              0x1000140c   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RefList_RF_REQs_SILENT_T         0x1000140e   Data          32  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RefList_RF_CONFIGs_FREQ_DF       0x1000142e   Data          14  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_RefList_RF_CONFIGs_BIT_RATE      0x1000143c   Data          14  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_C_PAL_TABLE_VALUE                0x1000144a   Data          10  Cfg_Types.o(CALIB_RO.ATIC172_WFC.16)
+    CfgData_C_MODE_RF_PER_MFB                0x10001454   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_MODE_RF_PER_MD                 0x10001458   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_MODE_RF_PER_MP                 0x1000145c   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_MODE_TIMEOUT_MI                0x10001460   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_ACQ_CHK_PROBING                0x10001464   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_P_PROBING_MP                   0x10001468   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_P_PROBING_MD                   0x1000146c   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_P_PROBING_MFB                  0x10001470   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_P_PROBING_MI                   0x10001474   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_P_PROBING_MS                   0x10001478   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_P_PROBING_MM                   0x1000147c   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_T_PROBING_PERIOD               0x10001480   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_T_PROBING_PERIOD2              0x10001484   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_A_PROBING_MP                   0x10001488   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_A_PROBING_MD                   0x1000148c   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_A_PROBING_MFB                  0x10001490   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_A_PROBING_MI                   0x10001494   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_A_PROBING_MS                   0x10001498   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_A_PROBING_MM                   0x1000149c   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_V_PROBING_PERIOD               0x100014a0   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_V_PROBING_PERIOD2              0x100014a4   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_PREF_ACQ_PERIOD_MP             0x100014a8   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_PREF_ACQ_PERIOD_MI             0x100014ac   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_PREF_ACQ_PERIOD_MD             0x100014b0   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_P_PA_PROBING                   0x100014b4   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_DP_PA_TIMEOUT_MP               0x100014b8   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_DP_PA_TIMEOUT_MI               0x100014bc   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_DP_PA_TIMEOUT_MD               0x100014c0   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_DP_PA_RF_PER_MP                0x100014c4   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_DP_PA_RF_PER_MI                0x100014c8   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_DP_PA_RF_PER_MD                0x100014cc   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_C_START_INIT_DELAY_THD           0x100014d0   Data           4  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_RefList_RF_CONFIGs_FREQ_F0       0x100014d4   Data          28  Cfg_Types.o(CALIB_RO.ATIC172_WFC.32)
+    CfgData_RefList_NC_LF_WUPs               0x100015de   Data           8  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_C_MODE_CTR_MAX_MFB               0x100015e6   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_C_DELIVERY_MODE                  0x100015e7   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_C_MTN_STANDSTILL_THD             0x100015e8   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_C_MTN_ROLLING_THD                0x100015e9   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_C_DP_PS_PG_THD_MP                0x100015ea   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_C_DP_PS_PG_THD_MI                0x100015eb   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_C_DP_PS_PG_THD_MD                0x100015ec   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_C_DP_PA_PG_THD_MP                0x100015ed   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_C_DP_PA_PG_THD_MI                0x100015ee   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_C_DP_PA_PG_THD_MD                0x100015ef   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_C_DP_PV_THD_MP                   0x100015f0   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_C_DP_PV_THD_MI                   0x100015f1   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_C_DP_PV_THD_MD                   0x100015f2   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_REQs_BURST_SEL        0x100015f3   Data          16  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_REQs_BURST_NR         0x10001603   Data          16  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_REQs_FCC              0x10001613   Data          16  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_REQs_ANTI_COL         0x10001623   Data          16  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_BURSTs_WUP_ID         0x10001633   Data           6  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_BURSTs_FR_NB          0x10001639   Data           6  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_BURSTs_FR_ID          0x1000163f   Data           6  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RF_BURST_STD1_INTER_FR           0x10001645   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RF_BURST_STD2_INTER_FR           0x10001647   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RF_BURST_TIRA_INTER_FR           0x10001649   Data           2  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RF_BURST_DIAG_INTER_FR           0x1000164b   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RF_BURST_SWID_INTER_FR           0x1000164c   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RF_BURST_RFCW_INTER_FR           0x1000164d   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_FRAMEs_RF_CONFIG      0x1000164e   Data           6  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_FRAMEs_SOM            0x10001654   Data          12  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_FRAMEs_EOM            0x10001660   Data          12  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_FRAMEs_PREAMBLE       0x1000166c   Data          12  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_FRAMEs_CKS_TYPE       0x10001678   Data           6  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_FRAMEs_CKS_MIN        0x1000167e   Data           6  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_FRAMEs_CKS_LENGTH     0x10001684   Data           6  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_WUPs_RF_CONFIG        0x1000168a   Data           3  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_WUPs_PAYLOAD          0x1000168d   Data          18  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_WUPs_REPETITION       0x1000169f   Data           3  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_WUPs_FOOT_DELAY       0x100016a2   Data           3  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_CONFIGs_MODULATION    0x100016a5   Data           7  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_RefList_RF_CONFIGs_ENCODING      0x100016ac   Data           7  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_C_ACC_RANGE_SENSOR               0x100016b3   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    CfgData_C_ANG_DET_NR_POS                 0x100016b4   Data           1  Cfg_Types.o(CALIB_RO.ATIC172_WFC.8)
+    AppData_LPM_Permission                   0x100016b8   Data           1  App_Acq.o(NVRAM_1.ATIC172_WFC.8)
+    CRCLockbyteUCS2                          0x100017fc   Data           4  system_SP49.o(UCS2_CRCLB)
+    main                                     0x10001801   Thumb Code    76  Core_Task_Init.o(CODE.ATIC172_WFC)
+    CoreCall_Task_Jobs                       0x10001861   Thumb Code   202  Core_Task_Events.o(CODE.ATIC172_WFC)
+    CoreCall_Acq_Job                         0x10001945   Thumb Code   154  Core_Acq.o(CODE.ATIC172_WFC)
+    CoreCall_GetPressure                     0x10001a29   Thumb Code   138  Core_Acq_Pressure.o(CODE.ATIC172_WFC)
+    CoreCall_PressureForLPM                  0x10001ab3   Thumb Code    88  Core_Acq_Pressure.o(CODE.ATIC172_WFC)
+    CoreCall_GetTemperature                  0x10001b25   Thumb Code    84  Core_Acq_Temperature.o(CODE.ATIC172_WFC)
+    CoreCall_EnterThermalShutdown            0x10001b79   Thumb Code    52  Core_Acq_Temperature.o(CODE.ATIC172_WFC)
+    CoreCall_TemperatureForLPM               0x10001bad   Thumb Code    20  Core_Acq_Temperature.o(CODE.ATIC172_WFC)
+    CoreCall_GetAccurateAcceleration         0x10001bd1   Thumb Code   162  Core_Acq_Acceleration.o(CODE.ATIC172_WFC)
+    CoreCall_GetAcceleration                 0x10001c73   Thumb Code   284  Core_Acq_Acceleration.o(CODE.ATIC172_WFC)
+    CoreCall_InitializeDynamicOffset         0x10001d8f   Thumb Code    56  Core_Acq_Acceleration.o(CODE.ATIC172_WFC)
+    CoreCall_NewRawAccelerationForAngle      0x10001dc7   Thumb Code   110  Core_Acq_Acceleration.o(CODE.ATIC172_WFC)
+    CoreCall_AccelerationCompensationForAngle 0x10001e35   Thumb Code   100  Core_Acq_Acceleration.o(CODE.ATIC172_WFC)
+    CoreCall_ReverseAccelerationForAngle     0x10001e99   Thumb Code    88  Core_Acq_Acceleration.o(CODE.ATIC172_WFC)
+    CoreCall_AccelerationForLPM              0x10001ef1   Thumb Code    96  Core_Acq_Acceleration.o(CODE.ATIC172_WFC)
+    Core_Acq_ConfigureExternalWakeup         0x10001fb1   Thumb Code     2  Core_Acq_ExternalWakeup.o(CODE.ATIC172_WFC)
+    CoreCall_ExternalWakeupConfirmation      0x10001fb3   Thumb Code     2  Core_Acq_ExternalWakeup.o(CODE.ATIC172_WFC)
+    CoreCall_GetSupplyVoltage                0x10001fb5   Thumb Code    80  Core_Acq_Voltage.o(CODE.ATIC172_WFC)
+    CoreCall_Ang_Job                         0x10002011   Thumb Code    16  Core_Ang.o(CODE.ATIC172_WFC)
+    CoreCall_DetermineAngle                  0x10002021   Thumb Code  1230  Core_Ang.o(CODE.ATIC172_WFC)
+    CoreCall_TM_Job                          0x10002515   Thumb Code   116  Core_TM.o(CODE.ATIC172_WFC)
+    CoreCall_StartTimer                      0x10002589   Thumb Code    80  Core_TM.o(CODE.ATIC172_WFC)
+    CoreCall_StopTimer                       0x100025d9   Thumb Code    40  Core_TM.o(CODE.ATIC172_WFC)
+    CoreCall_TM_PrepareForSleep              0x10002601   Thumb Code    12  Core_TM.o(CODE.ATIC172_WFC)
+    CoreCall_Interval_AfterWakeup            0x10002625   Thumb Code   116  Core_TM_Interval.o(CODE.ATIC172_WFC)
+    CoreCall_Interval_Timeouts               0x10002699   Thumb Code    74  Core_TM_Interval.o(CODE.ATIC172_WFC)
+    CoreCall_Interval_Start                  0x100026e3   Thumb Code    48  Core_TM_Interval.o(CODE.ATIC172_WFC)
+    CoreCall_StartIntervalTimerForLFCW       0x10002713   Thumb Code    36  Core_TM_Interval.o(CODE.ATIC172_WFC)
+    CoreCall_Interval_PrepareForSleep        0x10002737   Thumb Code    56  Core_TM_Interval.o(CODE.ATIC172_WFC)
+    CoreCall_StartGPTimerForRFCW             0x1000281d   Thumb Code    34  Core_TM_Delay.o(CODE.ATIC172_WFC)
+    CoreCall_StartSamplingTimer              0x1000283f   Thumb Code    78  Core_TM_Delay.o(CODE.ATIC172_WFC)
+    CoreCall_WaitSamplingTimer               0x1000288d   Thumb Code    46  Core_TM_Delay.o(CODE.ATIC172_WFC)
+    CoreCall_CancelSamplingTimer             0x100028bb   Thumb Code    12  Core_TM_Delay.o(CODE.ATIC172_WFC)
+    CoreCall_Delay_Start                     0x100028c7   Thumb Code    44  Core_TM_Delay.o(CODE.ATIC172_WFC)
+    CoreCall_LPM_Triggers                    0x10002909   Thumb Code   112  Core_TM_LPM.o(CODE.ATIC172_WFC)
+    CoreCall_LPM_Start                       0x10002979   Thumb Code    80  Core_TM_LPM.o(CODE.ATIC172_WFC)
+    CoreCall_LPM_PrepareForSleep             0x100029c9   Thumb Code   132  Core_TM_LPM.o(CODE.ATIC172_WFC)
+    CoreCall_Diag_Job                        0x10002a65   Thumb Code    82  Core_Diag.o(CODE.ATIC172_WFC)
+    CoreCall_PerformSelfDiag                 0x10002ab7   Thumb Code    20  Core_Diag.o(CODE.ATIC172_WFC)
+    CoreCall_GetResetCause                   0x10002acb   Thumb Code     6  Core_Diag.o(CODE.ATIC172_WFC)
+    CoreCall_PerformWarmReset                0x10002ad1   Thumb Code    38  Core_Diag.o(CODE.ATIC172_WFC)
+    CoreCall_PerformSelfDiag_ATIC            0x10002b93   Thumb Code    12  Core_Diag_ATIC.o(CODE.ATIC172_WFC)
+    CoreCall_PerformSelfDiag_Platform        0x10002cad   Thumb Code    12  Core_Diag_Platform.o(CODE.ATIC172_WFC)
+    CoreCall_AllowUCS1_Check                 0x10002cb9   Thumb Code     6  Core_Diag_Platform.o(CODE.ATIC172_WFC)
+    CoreCall_LF_Job                          0x10003077   Thumb Code    42  Core_LF.o(CODE.ATIC172_WFC)
+    CoreCall_LF_GetMode                      0x100030a1   Thumb Code   114  Core_LF.o(CODE.ATIC172_WFC)
+    CoreCall_LF_SetMode                      0x10003113   Thumb Code   188  Core_LF.o(CODE.ATIC172_WFC)
+    CoreCall_LF_GetData                      0x100031cf   Thumb Code   102  Core_LF.o(CODE.ATIC172_WFC)
+    CoreCall_LF_PrepareForSleep              0x10003235   Thumb Code    38  Core_LF.o(CODE.ATIC172_WFC)
+    CoreCall_RF_Job                          0x10003269   Thumb Code    40  Core_RF.o(CODE.ATIC172_WFC)
+    CoreCall_RF_InitDelay                    0x10003291   Thumb Code    82  Core_RF.o(CODE.ATIC172_WFC)
+    CoreCall_RF_SendBurst                    0x10003471   Thumb Code   122  Core_RF.o(CODE.ATIC172_WFC)
+    CoreCall_RF_SendWUP                      0x100034eb   Thumb Code    20  Core_RF.o(CODE.ATIC172_WFC)
+    CoreCall_RF_SendFrame                    0x100034ff   Thumb Code    46  Core_RF.o(CODE.ATIC172_WFC)
+    CoreCall_Keep_Job                        0x1000366d   Thumb Code    94  Core_Keep.o(CODE.ATIC172_WFC)
+    CoreCall_WriteInFlash_Trigger            0x100036cb   Thumb Code    20  Core_Keep.o(CODE.ATIC172_WFC)
+    CoreCall_CRC16_Check                     0x100036df   Thumb Code    16  Core_Keep.o(CODE.ATIC172_WFC)
+    CoreCall_FlashWrite                      0x100036f9   Thumb Code   144  Core_Keep_Flash.o(CODE.ATIC172_WFC)
+    CoreCall_ReadInfoATIC                    0x10003789   Thumb Code   152  Core_Keep_Flash.o(CODE.ATIC172_WFC)
+    CoreCall_NVRAM1_CalcChecksum             0x10003839   Thumb Code    54  Core_Keep_NVRAM.o(CODE.ATIC172_WFC)
+    CoreCall_NVRAM2_CalcChecksum             0x1000386f   Thumb Code    54  Core_Keep_NVRAM.o(CODE.ATIC172_WFC)
+    CoreCall_NVRAM_CalcChecksum              0x100038a5   Thumb Code    24  Core_Keep_NVRAM.o(CODE.ATIC172_WFC)
+    CoreCall_NVRAM1_VerifyChecksum           0x100038bd   Thumb Code    28  Core_Keep_NVRAM.o(CODE.ATIC172_WFC)
+    CoreCall_NVRAM2_VerifyChecksum           0x100038d9   Thumb Code    28  Core_Keep_NVRAM.o(CODE.ATIC172_WFC)
+    AppCall_Acq_PressureJob_Request          0x10003909   Thumb Code    98  App_Acq_Pressure.o(CODE.ATIC172_WFC)
+    AppCall_Acq_PressureJob_Restart          0x10003a6b   Thumb Code    52  App_Acq_Pressure.o(CODE.ATIC172_WFC)
+    AppCall_Acq_TemperatureJob_Request       0x10003b1d   Thumb Code   108  App_Acq_Temperature.o(CODE.ATIC172_WFC)
+    AppCall_Acq_TemperatureJob_Restart       0x10003c15   Thumb Code    90  App_Acq_Temperature.o(CODE.ATIC172_WFC)
+    AppCall_Acq_AccelerationJob_Request      0x10003cf5   Thumb Code   126  App_Acq_Acceleration.o(CODE.ATIC172_WFC)
+    AppCall_Acq_AccelerationJob_Restart      0x10003d73   Thumb Code    36  App_Acq_Acceleration.o(CODE.ATIC172_WFC)
+    AppCall_Acq_VoltageJob_Request           0x10003e85   Thumb Code    62  App_Acq_Voltage.o(CODE.ATIC172_WFC)
+    AppCall_Acq_VoltageJob_Restart           0x10003ec3   Thumb Code    76  App_Acq_Voltage.o(CODE.ATIC172_WFC)
+    AppCall_Delta_Pressure_Job               0x10003f3d   Thumb Code    36  App_Delta.o(CODE.ATIC172_WFC)
+    AppCall_Delta_Motion_Job                 0x10003f61   Thumb Code    44  App_Delta.o(CODE.ATIC172_WFC)
+    AppCall_NewLocalization                  0x10003fb9   Thumb Code    14  App_Delta_Angle.o(CODE.ATIC172_WFC)
+    AppCall_DetermineAngle                   0x10003fc7   Thumb Code    50  App_Delta_Angle.o(CODE.ATIC172_WFC)
+    AppCall_DetermineMotion                  0x10004001   Thumb Code   128  App_Delta_Motion.o(CODE.ATIC172_WFC)
+    AppCall_ComputePressureChange            0x1000409d   Thumb Code   572  App_Delta_Pressure.o(CODE.ATIC172_WFC)
+    AppCall_ComputeBatteryStatus             0x10004339   Thumb Code    44  App_Delta_Battery.o(CODE.ATIC172_WFC)
+    AppCall_LF_Job                           0x10004375   Thumb Code    26  App_LF.o(CODE.ATIC172_WFC)
+    AppCall_LF_StateSetting                  0x100043dd   Thumb Code    92  App_LF_Command.o(CODE.ATIC172_WFC)
+    AppCall_LF_CommandReception              0x10004439   Thumb Code   184  App_LF_Command.o(CODE.ATIC172_WFC)
+    AppCall_StartStopTimer                   0x100045cd   Thumb Code    36  App_Mode.o(CODE.ATIC172_WFC)
+    AppCall_Jobs                             0x10004673   Thumb Code   168  App_Mode.o(CODE.ATIC172_WFC)
+    AppCall_EnterWFCMode                     0x100047cd   Thumb Code   102  App_Mode_Actions.o(CODE.ATIC172_WFC)
+    AppCall_StartTimer_RF_PER_Mode           0x10004833   Thumb Code    36  App_Mode_Actions.o(CODE.ATIC172_WFC)
+    AppCall_ModeActions_Job                  0x10004857   Thumb Code   402  App_Mode_Actions.o(CODE.ATIC172_WFC)
+    AppCall_RequestDefaultHistories          0x10004a1d   Thumb Code     2  App_Mode_History.o(CODE.ATIC172_WFC)
+    AppCall_ResetOnRequest_TestActivation    0x10004a21   Thumb Code    16  App_Mode_Reset.o(CODE.ATIC172_WFC)
+    AppCall_GetResetCause                    0x10004a31   Thumb Code    72  App_Mode_Reset.o(CODE.ATIC172_WFC)
+    AppCall_CheckNVRAM1                      0x10004a79   Thumb Code    18  App_Mode_Reset.o(CODE.ATIC172_WFC)
+    AppCall_ContinueAfterResetOnRequest_TestActivation 0x10004a8b   Thumb Code    48  App_Mode_Reset.o(CODE.ATIC172_WFC)
+    AppCall_SelfDiagJob                      0x10004b11   Thumb Code   234  App_Mode_Diag.o(CODE.ATIC172_WFC)
+    AppCall_RF_Job                           0x10004c19   Thumb Code    48  App_RF.o(CODE.ATIC172_WFC)
+    AppCall_EmitRF                           0x10004c5d   Thumb Code   240  App_RF_Request.o(CODE.ATIC172_WFC)
+    AppCall_RF_Transmission                  0x10004d7d   Thumb Code   444  App_RF_Request.o(CODE.ATIC172_WFC)
+    AppCall_RF_Callback                      0x10005197   Thumb Code    72  App_RF_Request.o(CODE.ATIC172_WFC)
+    AppCall_Cancel_PendingRF                 0x100051df   Thumb Code    44  App_RF_Request.o(CODE.ATIC172_WFC)
+    AppCall_WFCData_Init                     0x100052f5   Thumb Code    28  App_RF_Data.o(CODE.ATIC172_WFC)
+    __ARM_common_switch8                     0x10005315   Thumb Code    26  App_Acq_Pressure.o(i.__ARM_common_switch8)
+    AppData_P_Range_Sensor                   0x100053f2   Data           1  App_RF_Data.o(CONST.SWID)
+    AppData_Frame_ID                         0x100053f3   Data           1  App_RF_Data.o(CONST.SWID)
+    AppData_SW_APP_IDentifier                0x100053f4   Data           7  App_RF_Data.o(CONST.SWID)
+    CRCLockbyteCode                          0x100053fc   Data           4  system_SP49.o(CODE_CRCLB)
+    CoreData_StackGuard                      0x20000200   Data           4  Core_Task_Events.o(STACK_GUARD)
+    __initial_sp                             0x20000200   Data           0  startup_SP49.o(STACK)
+    CRCLockbyteUCS1                          0x20000206   Data           4  system_SP49.o(UCS1_CRCLB)
+    CoreData_RawAcceleration                 0x20000220   Data           2  Core_Acq_Acceleration.o(RAM_0.ATIC172_WFC.16)
+    CoreData_AccelerationValue               0x20000222   Data           2  Core_Acq_Acceleration.o(RAM_0.ATIC172_WFC.16)
+    CoreData_DynamicOffset                   0x20000224   Data           2  Core_Acq_Acceleration.o(RAM_0.ATIC172_WFC.16)
+    CoreData_SupplyVoltage                   0x20000226   Data           2  Core_Acq_Voltage.o(RAM_0.ATIC172_WFC.16)
+    CoreData_CopyDEVSTATUS                   0x20000254   Data           4  Core_Task_Init.o(RAM_0.ATIC172_WFC.32)
+    CoreData_Events                          0x20000258   Data           4  Core_Task_Events.o(RAM_0.ATIC172_WFC.32)
+    CoreData_AccelerationStatus              0x2000025c   Data           4  Core_Acq_Acceleration.o(RAM_0.ATIC172_WFC.32)
+    CoreData_DynamicOffsetStatus             0x20000260   Data           4  Core_Acq_Acceleration.o(RAM_0.ATIC172_WFC.32)
+    CoreData_VoltageStatus                   0x20000264   Data           4  Core_Acq_Voltage.o(RAM_0.ATIC172_WFC.32)
+    CoreData_SelfDiagSts                     0x20000268   Data           4  Core_Diag_ATIC.o(RAM_0.ATIC172_WFC.32)
+    AppData_InternalEvents                   0x20000270   Data           4  App_Mode.o(RAM_0.ATIC172_WFC.32)
+    CoreData_PressureAcquired                0x20000278   Data           1  Core_Acq_Pressure.o(RAM_0.ATIC172_WFC.8)
+    CoreData_TemperatureAcquired             0x20000279   Data           1  Core_Acq_Temperature.o(RAM_0.ATIC172_WFC.8)
+    CoreData_ThermalShutdownTriggered        0x2000027a   Data           1  Core_Acq_Temperature.o(RAM_0.ATIC172_WFC.8)
+    CoreData_AccelerationAcquired            0x2000027b   Data           1  Core_Acq_Acceleration.o(RAM_0.ATIC172_WFC.8)
+    CoreData_VoltageAcquired                 0x2000027c   Data           1  Core_Acq_Voltage.o(RAM_0.ATIC172_WFC.8)
+    CoreData_TriggerLPM                      0x2000027d   Data           3  Core_TM_LPM.o(RAM_0.ATIC172_WFC.8)
+    AppData_DP_MemorizedState                0x200002a4   Data           1  App_Acq_Pressure.o(RAM_0.ATIC172_WFC.8)
+    AppData_AcqDone_GetPressure              0x200002a5   Data           1  App_Acq_Pressure.o(RAM_0.ATIC172_WFC.8)
+    AppData_AcqDone_GetTemperature           0x200002a6   Data           1  App_Acq_Temperature.o(RAM_0.ATIC172_WFC.8)
+    AppData_AcqDone_GetAcceleration          0x200002a7   Data           1  App_Acq_Acceleration.o(RAM_0.ATIC172_WFC.8)
+    AppData_AcqDone_GetSupplyVoltage         0x200002a8   Data           1  App_Acq_Voltage.o(RAM_0.ATIC172_WFC.8)
+    AppData_WFCModeChange                    0x200002a9   Data           1  App_Mode_Actions.o(RAM_0.ATIC172_WFC.8)
+    CoreData_PressureValue                   0x30000002   Data           2  Core_Acq_Pressure.o(NVRAM_1.ATIC172_WFC.16)
+    CoreData_ScaledTemperature               0x30000004   Data           2  Core_Acq_Temperature.o(NVRAM_1.ATIC172_WFC.16)
+    CoreData_TemperatureValue                0x30000006   Data           2  Core_Acq_Temperature.o(NVRAM_1.ATIC172_WFC.16)
+    CoreData_TimerLoad_LPM                   0x3000000c   Data           6  Core_TM_LPM.o(NVRAM_1.ATIC172_WFC.16)
+    AppData_CompensatedPressure              0x30000012   Data           2  App_Acq_Pressure.o(NVRAM_1.ATIC172_WFC.16)
+    AppData_CompensatedTemperature           0x30000014   Data           2  App_Acq_Temperature.o(NVRAM_1.ATIC172_WFC.16)
+    AppData_CompensatedAcceleration          0x30000018   Data           2  App_Acq_Acceleration.o(NVRAM_1.ATIC172_WFC.16)
+    AppData_DynamicOffsetValue               0x3000001a   Data           2  App_Acq_Acceleration.o(NVRAM_1.ATIC172_WFC.16)
+    AppData_VoltageValue                     0x3000001c   Data           2  App_Acq_Voltage.o(NVRAM_1.ATIC172_WFC.16)
+    CfgData_C_DEFAULT_OFFSET                 0x3000001e   Data           2  Cfg_Types.o(NVRAM_1.ATIC172_WFC.16)
+    CoreData_PressureStatus                  0x30000020   Data           4  Core_Acq_Pressure.o(NVRAM_1.ATIC172_WFC.32)
+    CoreData_TemperatureStatus               0x30000024   Data           4  Core_Acq_Temperature.o(NVRAM_1.ATIC172_WFC.32)
+    AppData_TimerCounter_RF_PER_Mode         0x3000002c   Data           4  App_Mode_Actions.o(NVRAM_1.ATIC172_WFC.32)
+    AppData_TimerCounter_SelfDiagCycle       0x30000030   Data           4  App_Mode_Diag.o(NVRAM_1.ATIC172_WFC.32)
+    CoreData_UCS1_Check_Allowance            0x30000035   Data           1  Core_Diag_Platform.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_FormattedPressure_RF_USER1       0x30000037   Data           1  App_Acq_Pressure.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_FormattedPressure_RF_ASSEMBLY    0x30000038   Data           1  App_Acq_Pressure.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_PressureStatus                   0x30000039   Data           1  App_Acq_Pressure.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_FormattedTemperature_RF_USER1    0x3000003a   Data           1  App_Acq_Temperature.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_FormattedTemperature_RF_ASSEMBLY 0x3000003b   Data           1  App_Acq_Temperature.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_TemperatureStatus                0x3000003c   Data           1  App_Acq_Temperature.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_FormattedAcceleration_RF_USER1   0x3000003d   Data           1  App_Acq_Acceleration.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_AccelerationStatus               0x3000003e   Data           1  App_Acq_Acceleration.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_DynamicOffsetStatus              0x3000003f   Data           1  App_Acq_Acceleration.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_VoltageStatus                    0x30000040   Data           1  App_Acq_Voltage.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_AngleType                        0x30000041   Data           1  App_Delta_Angle.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_AnglePosition                    0x30000042   Data           1  App_Delta_Angle.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_AngleSynchronizationStatus       0x30000043   Data           1  App_Delta_Angle.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_CONTINUOUS_MOTION_CNT            0x30000044   Data           1  App_Delta_Motion.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_DP_AlertState                    0x30000045   Data           1  App_Delta_Pressure.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_DP_BypassComputation             0x30000046   Data           1  App_Delta_Pressure.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_PressureRef                      0x30000047   Data           1  App_Delta_Pressure.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_LastRFPressure                   0x30000048   Data           1  App_Delta_Pressure.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_LowBatteryFlag                   0x30000049   Data           1  App_Delta_Battery.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_FormattedVdrop                   0x3000004a   Data           1  App_Delta_Battery.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_LF_STATE                         0x3000004b   Data           1  App_LF_Command.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_WFCMode                          0x30000050   Data           1  App_Mode_Actions.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_MFB_Counter                      0x30000051   Data           1  App_Mode_Actions.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_SelfDiagState                    0x30000052   Data           1  App_Mode_Diag.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_Ongoing_RF_REQ                   0x30000054   Data           1  App_RF_Request.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_Prepare_RF_REQ                   0x30000055   Data           1  App_RF_Request.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_RF_CurrentState                  0x30000058   Data           1  App_RF_Request.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_RF_BurstCnt                      0x30000059   Data           1  App_RF_Request.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_FlashProtectionStatus            0x3000005a   Data           1  App_RF_Data.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_SW_GEN_IDentifier                0x3000005b   Data           2  App_RF_Data.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_SW_Code_CRC16                    0x3000005d   Data           2  App_RF_Data.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_SW_Calibration_CRC16             0x3000005f   Data           2  App_RF_Data.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_Product_Code                     0x30000061   Data           2  App_RF_Data.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_WFC_ID                           0x30000063   Data           4  App_RF_Data.o(NVRAM_1.ATIC172_WFC.8)
+    AppData_Library_Version                  0x30000067   Data           4  App_RF_Data.o(NVRAM_1.ATIC172_WFC.8)
+    CfgData_C_RDY_MODE                       0x3000006b   Data           1  Cfg_Types.o(NVRAM_1.ATIC172_WFC.8)
+    CoreData_TimerLoad                       0x3000006c   Data          24  Core_TM_Interval.o(NVRAM_1.ATIC172_WFC.16)
+    AppData_FunctionNotAllowed               0x3000008d   Data           1  App_Acq_Acceleration.o(NVRAM_2.ATIC172_WFC.8)
+    AppData_LFEcho                           0x3000008e   Data           1  App_LF_Command.o(NVRAM_2.ATIC172_WFC.8)
+    AppData_LF_Key                           0x3000008f   Data           1  App_LF_Command.o(NVRAM_2.ATIC172_WFC.8)
+    AppData_SelfDiagnosisStatus              0x30000090   Data           1  App_Mode_Diag.o(NVRAM_2.ATIC172_WFC.8)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x10000829
+
+  Load Region LR_FLASH_CONFIG_LINE (Base: 0x10000800, Size: 0x00000020, Max: 0x00000020, ABSOLUTE)
+
+    Execution Region ER_FLASH_CONFIG_LINE (Base: 0x10000800, Size: 0x00000020, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10000800   0x00000020   Data   RO            4    FLASH_CONFIG        system_SP49.o
+
+
+
+  Load Region LR_FLASH_BOOT_CONTENTS (Base: 0x10000820, Size: 0x000007e0, Max: 0x000007e0, ABSOLUTE)
+
+    Execution Region ER_FLASH_BOOT (Base: 0x10000820, Size: 0x000007e0, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10000820   0x00000008   Code   RO         1835    RESET               startup_SP49.o
+    0x10000828   0x00000000   Code   RO         2014  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x10000828   0x00000004   Code   RO         2029    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x1000082c   0x00000004   Code   RO         2032    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x10000830   0x00000000   Code   RO         2034    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x10000830   0x00000000   Code   RO         2036    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x10000830   0x00000008   Code   RO         2037    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x10000838   0x00000000   Code   RO         2039    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x10000838   0x00000000   Code   RO         2041    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x10000838   0x00000004   Code   RO         2030    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x1000083c   0x0000002c   Code   RO         2017    .text               mc_p.l(uidiv.o)
+    0x10000868   0x00000028   Code   RO         2019    .text               mc_p.l(idiv.o)
+    0x10000890   0x00000024   Code   RO         2021    .text               mc_p.l(memcpya.o)
+    0x100008b4   0x00000024   Code   RO         2023    .text               mc_p.l(memseta.o)
+    0x100008d8   0x0000001a   Code   RO         2025    .text               mc_p.l(memcmp.o)
+    0x100008f2   0x00000002   PAD
+    0x100008f4   0x00000024   Code   RO         2043    .text               mc_p.l(init.o)
+    0x10000918   0x0000003a   Code   RO         2053    .text               mc_p.l(__dczerorl.o)
+    0x10000952   0x00000002   PAD
+    0x10000954   0x00000008   Code   RO         1838    Lib_Calib_GP_Timer_  SP49_Library.lib(Lib_Calib_GP_Timer.o)
+    0x1000095c   0x0000000c   Code   RO         1846    Lib_Calib_LF_OnOff_Timer_  SP49_Library.lib(Lib_Calib_LF_OnOff_Timer.o)
+    0x10000968   0x00000008   Code   RO         1842    Lib_Calib_Precounter_  SP49_Library.lib(Lib_Calib_Precounter.o)
+    0x10000970   0x00000008   Code   RO         1850    Lib_Calib_Sample_Timer_  SP49_Library.lib(Lib_Calib_Sample_Timer.o)
+    0x10000978   0x00000008   Code   RO         1854    Lib_Comp_Acceleration_  SP49_Library.lib(Lib_Comp_Acceleration.o)
+    0x10000980   0x00000008   Code   RO         1858    Lib_Comp_Auto_Acc_Offset_  SP49_Library.lib(Lib_Comp_Auto_Acc_Offset.o)
+    0x10000988   0x00000008   Code   RO         1862    Lib_Comp_OnDemand_Acc_Offset_  SP49_Library.lib(Lib_Comp_OnDemand_Acc_Offset.o)
+    0x10000990   0x00000008   Code   RO         1866    Lib_Comp_Pressure_  SP49_Library.lib(Lib_Comp_Pressure.o)
+    0x10000998   0x00000008   Code   RO         1870    Lib_Comp_Reverse_Acceleration_  SP49_Library.lib(Lib_Comp_Reverse_Acceleration.o)
+    0x100009a0   0x00000008   Code   RO         1874    Lib_Comp_Reverse_Pressure_  SP49_Library.lib(Lib_Comp_Reverse_Pressure.o)
+    0x100009a8   0x00000008   Code   RO         1878    Lib_Diag_ADC_Check_  SP49_Library.lib(Lib_Diag_ADC_Check.o)
+    0x100009b0   0x0000000c   Code   RO         1882    Lib_Diag_RC_Osc_Chk_  SP49_Library.lib(Lib_Diag_RC_Osc_Chk.o)
+    0x100009bc   0x00000008   Code   RO         1886    Lib_Fl_Change_UCS_Line_  SP49_Library.lib(Lib_Fl_Change_UCS_Line.o)
+    0x100009c4   0x00000008   Code   RO         1890    Lib_LF_Carrier_Mode_Config_  SP49_Library.lib(Lib_LF_Carrier_Mode_Config.o)
+    0x100009cc   0x00000008   Code   RO         1894    Lib_LF_Data_Mode_Config_  SP49_Library.lib(Lib_LF_Data_Mode_Config.o)
+    0x100009d4   0x00000008   Code   RO         1898    Lib_LF_Data_Reception_  SP49_Library.lib(Lib_LF_Data_Reception.o)
+    0x100009dc   0x00000008   Code   RO         1902    Lib_Math_CRC16_Check_  SP49_Library.lib(Lib_Math_CRC16_Check.o)
+    0x100009e4   0x00000008   Code   RO         1906    Lib_Math_CRC8_Calc_  SP49_Library.lib(Lib_Math_CRC8_Calc.o)
+    0x100009ec   0x00000008   Code   RO         1910    Lib_Math_Format_Measurement_  SP49_Library.lib(Lib_Math_Format_Measurement.o)
+    0x100009f4   0x00000008   Code   RO         1918    Lib_Math_Median_    SP49_Library.lib(Lib_Math_Median.o)
+    0x100009fc   0x00000008   Code   RO         1914    Lib_Math_Random_Gen_  SP49_Library.lib(Lib_Math_Random_Gen.o)
+    0x10000a04   0x00000008   Code   RO         1922    Lib_Math_SQRT_      SP49_Library.lib(Lib_Math_SQRT.o)
+    0x10000a0c   0x0000000c   Code   RO         1926    Lib_Meas_Acc_FIR_   SP49_Library.lib(Lib_Meas_Acc_FIR.o)
+    0x10000a18   0x00000008   Code   RO         1930    Lib_Meas_Comp_SupplyV_  SP49_Library.lib(Lib_Meas_Comp_SupplyV.o)
+    0x10000a20   0x00000008   Code   RO         1934    Lib_Meas_Comp_Temp_  SP49_Library.lib(Lib_Meas_Comp_Temp.o)
+    0x10000a28   0x00000008   Code   RO         1938    Lib_Meas_Fast_Sample_  SP49_Library.lib(Lib_Meas_Fast_Sample.o)
+    0x10000a30   0x00000008   Code   RO         1942    Lib_Meas_MEIF_Config_  SP49_Library.lib(Lib_Meas_MEIF_Config.o)
+    0x10000a38   0x00000008   Code   RO         1946    Lib_Meas_Raw_Acceleration_  SP49_Library.lib(Lib_Meas_Raw_Acceleration.o)
+    0x10000a40   0x00000008   Code   RO         1950    Lib_Meas_Raw_Pressure_  SP49_Library.lib(Lib_Meas_Raw_Pressure.o)
+    0x10000a48   0x0000002c   Code   RO         1954    Lib_RF_Config_Add_  SP49_Library.lib(Lib_RF_Config_Add.o)
+    0x10000a74   0x0000000c   Code   RO         1958    Lib_RF_Config_Basic_  SP49_Library.lib(Lib_RF_Config_Basic.o)
+    0x10000a80   0x00000008   Code   RO         1974    Lib_RF_Start_Init_Delay_  SP49_Library.lib(Lib_RF_Start_Init_Delay.o)
+    0x10000a88   0x00000008   Code   RO         1966    Lib_RF_Testing_     SP49_Library.lib(Lib_RF_Testing.o)
+    0x10000a90   0x00000008   Code   RO         1962    Lib_RF_Transmit_Frame_  SP49_Library.lib(Lib_RF_Transmit_Frame.o)
+    0x10000a98   0x00000008   Code   RO         1970    Lib_RF_VCO_Tuning_  SP49_Library.lib(Lib_RF_VCO_Tuning.o)
+    0x10000aa0   0x00000008   Code   RO         1978    Lib_Serv_Hard_Fault_  SP49_Library.lib(Lib_Serv_Hard_Fault.o)
+    0x10000aa8   0x00000008   Code   RO         1982    Lib_Serv_Init_Interval_Timer_  SP49_Library.lib(Lib_Serv_Init_Interval_Timer.o)
+    0x10000ab0   0x0000001c   Code   RO         1986    Lib_Serv_Read_ID_   SP49_Library.lib(Lib_Serv_Read_ID.o)
+    0x10000acc   0x00000008   Code   RO         1990    Lib_Serv_Start_Xtal_Osc_  SP49_Library.lib(Lib_Serv_Start_Xtal_Osc.o)
+    0x10000ad4   0x00000008   Code   RO         1994    Lib_Serv_Stop_Xtal_Osc_  SP49_Library.lib(Lib_Serv_Stop_Xtal_Osc.o)
+    0x10000adc   0x0000000c   Code   RO         2002    Lib_State_LPM_Config_  SP49_Library.lib(Lib_State_LPM_Config.o)
+    0x10000ae8   0x00000008   Code   RO         2006    Lib_State_LPM_Start_  SP49_Library.lib(Lib_State_LPM_Start.o)
+    0x10000af0   0x00000008   Code   RO         1998    Lib_State_Low_Power_  SP49_Library.lib(Lib_State_Low_Power.o)
+    0x10000af8   0x00000008   Code   RO         2010    Lib_State_Thermal_Shutdown_  SP49_Library.lib(Lib_State_Thermal_Shutdown.o)
+    0x10000b00   0x0000000e   Code   RO         2047    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x10000b0e   0x00000002   Code   RO         2048    i.__scatterload_null  mc_p.l(handlers.o)
+    0x10000b10   0x0000000e   Code   RO         2049    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x10000b1e   0x00000002   PAD
+    0x10000b20   0x00000030   Data   RO         2045    Region$$Table       anon$$obj.o
+    0x10000b50   0x000004ae   PAD
+    0x10000ffe   0x00000002   Data   RW          761    .ARM.__at_0x10000FFE  Core_Keep_Flash.o
+
+
+
+  Load Region LR_FLASH_WRITE_CONTENTS (Base: 0x10001000, Size: 0x00000020, Max: 0x00000020, ABSOLUTE)
+
+    Execution Region ER_WRITE_IN_FLASH (Base: 0x10001000, Size: 0x00000020, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10001000   0x00000002   Data   RW         1803    CALIB_RW.ATIC172_WFC.16  Cfg_Types.o
+    0x10001002   0x00000001   Data   RW         1804    CALIB_RW.ATIC172_WFC.8  Cfg_Types.o
+    0x10001003   0x0000001b   PAD
+    0x1000101e   0x00000002   Data   RW          762    .ARM.__at_0x1000101E  Core_Keep_Flash.o
+
+
+
+  Load Region LR_FLASH_UCS1_CONTENTS (Base: 0x10001020, Size: 0x0000069c, Max: 0x000007dc, ABSOLUTE)
+
+    Execution Region ER_FLASH_UCS1_PREPAREFRAMETABLE (Base: 0x10001020, Size: 0x00000010, Max: 0x00000010, ABSOLUTE, FIXED)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10001020   0x00000010   Data   RO         1484    CALIB_USRXFCN_RO.ATIC172_WFC  App_RF_Request.o
+
+
+    Execution Region ER_FLASH_UCS1 (Base: 0x10001030, Size: 0x0000068c, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10001030   0x000001c4   Code   RO          819    CODE.ATIC172_WFC    App_Acq.o
+    0x100011f4   0x00000150   Code   RO         1482    CODE_USRXFCN_RO.ATIC172_WFC  App_RF_Request.o
+    0x10001344   0x0000003c   Data   RO         1243    CALIB_RO.ATIC172_WFC  App_LF_Command.o
+    0x10001380   0x00000040   Data   RO         1646    CALIB_RO.ATIC172_WFC  Cfg_Types.o
+    0x100013c0   0x00000018   Data   RO         1647    CALIB_RO.ATIC172_WFC  Cfg_Types.o
+    0x100013d8   0x0000000c   Data   RO          438    CALIB_RO.ATIC172_WFC.16  Core_Ang.o
+    0x100013e4   0x00000002   Data   RO         1653    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x100013e6   0x00000002   Data   RO         1654    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x100013e8   0x00000002   Data   RO         1655    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x100013ea   0x00000002   Data   RO         1656    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x100013ec   0x00000002   Data   RO         1657    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x100013ee   0x00000002   Data   RO         1658    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x100013f0   0x00000002   Data   RO         1659    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x100013f2   0x00000002   Data   RO         1660    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x100013f4   0x00000002   Data   RO         1661    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x100013f6   0x00000002   Data   RO         1662    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x100013f8   0x00000002   Data   RO         1663    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x100013fa   0x00000002   Data   RO         1664    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x100013fc   0x00000002   Data   RO         1665    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x100013fe   0x00000002   Data   RO         1666    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x10001400   0x00000002   Data   RO         1667    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x10001402   0x00000002   Data   RO         1668    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x10001404   0x00000002   Data   RO         1669    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x10001406   0x00000002   Data   RO         1670    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x10001408   0x00000002   Data   RO         1671    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x1000140a   0x00000002   Data   RO         1672    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x1000140c   0x00000002   Data   RO         1673    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x1000140e   0x00000020   Data   RO         1674    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x1000142e   0x0000000e   Data   RO         1675    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x1000143c   0x0000000e   Data   RO         1676    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x1000144a   0x0000000a   Data   RO         1677    CALIB_RO.ATIC172_WFC.16  Cfg_Types.o
+    0x10001454   0x00000004   Data   RO         1683    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x10001458   0x00000004   Data   RO         1684    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x1000145c   0x00000004   Data   RO         1685    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x10001460   0x00000004   Data   RO         1686    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x10001464   0x00000004   Data   RO         1687    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x10001468   0x00000004   Data   RO         1688    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x1000146c   0x00000004   Data   RO         1689    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x10001470   0x00000004   Data   RO         1690    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x10001474   0x00000004   Data   RO         1691    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x10001478   0x00000004   Data   RO         1692    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x1000147c   0x00000004   Data   RO         1693    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x10001480   0x00000004   Data   RO         1694    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x10001484   0x00000004   Data   RO         1695    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x10001488   0x00000004   Data   RO         1696    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x1000148c   0x00000004   Data   RO         1697    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x10001490   0x00000004   Data   RO         1698    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x10001494   0x00000004   Data   RO         1699    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x10001498   0x00000004   Data   RO         1700    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x1000149c   0x00000004   Data   RO         1701    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x100014a0   0x00000004   Data   RO         1702    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x100014a4   0x00000004   Data   RO         1703    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x100014a8   0x00000004   Data   RO         1704    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x100014ac   0x00000004   Data   RO         1705    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x100014b0   0x00000004   Data   RO         1706    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x100014b4   0x00000004   Data   RO         1707    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x100014b8   0x00000004   Data   RO         1708    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x100014bc   0x00000004   Data   RO         1709    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x100014c0   0x00000004   Data   RO         1710    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x100014c4   0x00000004   Data   RO         1711    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x100014c8   0x00000004   Data   RO         1712    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x100014cc   0x00000004   Data   RO         1713    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x100014d0   0x00000004   Data   RO         1714    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x100014d4   0x0000001c   Data   RO         1716    CALIB_RO.ATIC172_WFC.32  Cfg_Types.o
+    0x100014f0   0x00000078   Data   RO         1244    CALIB_RO.ATIC172_WFC.8  App_LF_Command.o
+    0x10001568   0x00000076   Data   RO         1483    CALIB_RO.ATIC172_WFC.8  App_RF_Request.o
+    0x100015de   0x00000008   Data   RO         1723    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100015e6   0x00000001   Data   RO         1724    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100015e7   0x00000001   Data   RO         1725    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100015e8   0x00000001   Data   RO         1726    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100015e9   0x00000001   Data   RO         1727    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100015ea   0x00000001   Data   RO         1728    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100015eb   0x00000001   Data   RO         1729    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100015ec   0x00000001   Data   RO         1730    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100015ed   0x00000001   Data   RO         1731    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100015ee   0x00000001   Data   RO         1732    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100015ef   0x00000001   Data   RO         1733    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100015f0   0x00000001   Data   RO         1734    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100015f1   0x00000001   Data   RO         1735    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100015f2   0x00000001   Data   RO         1736    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100015f3   0x00000010   Data   RO         1737    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x10001603   0x00000010   Data   RO         1738    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x10001613   0x00000010   Data   RO         1739    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x10001623   0x00000010   Data   RO         1741    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x10001633   0x00000006   Data   RO         1742    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x10001639   0x00000006   Data   RO         1743    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x1000163f   0x00000006   Data   RO         1744    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x10001645   0x00000002   Data   RO         1745    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x10001647   0x00000002   Data   RO         1746    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x10001649   0x00000002   Data   RO         1747    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x1000164b   0x00000001   Data   RO         1748    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x1000164c   0x00000001   Data   RO         1749    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x1000164d   0x00000001   Data   RO         1750    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x1000164e   0x00000006   Data   RO         1751    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x10001654   0x0000000c   Data   RO         1752    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x10001660   0x0000000c   Data   RO         1753    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x1000166c   0x0000000c   Data   RO         1754    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x10001678   0x00000006   Data   RO         1755    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x1000167e   0x00000006   Data   RO         1756    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x10001684   0x00000006   Data   RO         1757    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x1000168a   0x00000003   Data   RO         1761    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x1000168d   0x00000012   Data   RO         1763    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x1000169f   0x00000003   Data   RO         1765    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100016a2   0x00000003   Data   RO         1766    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100016a5   0x00000007   Data   RO         1799    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100016ac   0x00000007   Data   RO         1800    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100016b3   0x00000001   Data   RO         1801    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100016b4   0x00000001   Data   RO         1802    CALIB_RO.ATIC172_WFC.8  Cfg_Types.o
+    0x100016b5   0x00000003   PAD
+    0x100016b8   0x00000001   Data   RW          820    NVRAM_1.ATIC172_WFC.8  App_Acq.o
+
+
+
+  Load Region LR_FLASH_UCS1_CRCLOCKBYTE (Base: 0x100017fc, Size: 0x00000004, Max: 0x00000004, ABSOLUTE)
+
+    Execution Region FLASH_UCS1_CRCLOCKBYTE (Base: 0x100017fc, Size: 0x00000004, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x100017fc   0x00000004   Data   RW            6    UCS2_CRCLB          system_SP49.o
+
+
+
+  Load Region LR_FLASH_CODE_CONTENTS (Base: 0x10001800, Size: 0x00003b50, Max: 0x00003bf0, ABSOLUTE)
+
+    Execution Region ER_FLASH_CODE (Base: 0x10001800, Size: 0x00003b50, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10001800   0x00000060   Code   RO           50    CODE.ATIC172_WFC    Core_Task_Init.o
+    0x10001860   0x000000e4   Code   RO          184    CODE.ATIC172_WFC    Core_Task_Events.o
+    0x10001944   0x000000e4   Code   RO          241    CODE.ATIC172_WFC    Core_Acq.o
+    0x10001a28   0x000000fc   Code   RO          283    CODE.ATIC172_WFC    Core_Acq_Pressure.o
+    0x10001b24   0x000000ac   Code   RO          321    CODE.ATIC172_WFC    Core_Acq_Temperature.o
+    0x10001bd0   0x000003e0   Code   RO          352    CODE.ATIC172_WFC    Core_Acq_Acceleration.o
+    0x10001fb0   0x00000004   Code   RO          383    CODE.ATIC172_WFC    Core_Acq_ExternalWakeup.o
+    0x10001fb4   0x0000005c   Code   RO          406    CODE.ATIC172_WFC    Core_Acq_Voltage.o
+    0x10002010   0x00000504   Code   RO          437    CODE.ATIC172_WFC    Core_Ang.o
+    0x10002514   0x00000110   Code   RO          464    CODE.ATIC172_WFC    Core_TM.o
+    0x10002624   0x00000168   Code   RO          497    CODE.ATIC172_WFC    Core_TM_Interval.o
+    0x1000278c   0x0000017c   Code   RO          528    CODE.ATIC172_WFC    Core_TM_Delay.o
+    0x10002908   0x0000015c   Code   RO          552    CODE.ATIC172_WFC    Core_TM_LPM.o
+    0x10002a64   0x000000a8   Code   RO          582    CODE.ATIC172_WFC    Core_Diag.o
+    0x10002b0c   0x000000f0   Code   RO          615    CODE.ATIC172_WFC    Core_Diag_ATIC.o
+    0x10002bfc   0x00000190   Code   RO          644    CODE.ATIC172_WFC    Core_Diag_Platform.o
+    0x10002d8c   0x000004dc   Code   RO          673    CODE.ATIC172_WFC    Core_LF.o
+    0x10003268   0x00000404   Code   RO          702    CODE.ATIC172_WFC    Core_RF.o
+    0x1000366c   0x0000008c   Code   RO          729    CODE.ATIC172_WFC    Core_Keep.o
+    0x100036f8   0x00000140   Code   RO          760    CODE.ATIC172_WFC    Core_Keep_Flash.o
+    0x10003838   0x000000d0   Code   RO          791    CODE.ATIC172_WFC    Core_Keep_NVRAM.o
+    0x10003908   0x00000214   Code   RO          876    CODE.ATIC172_WFC    App_Acq_Pressure.o
+    0x10003b1c   0x000001d8   Code   RO          916    CODE.ATIC172_WFC    App_Acq_Temperature.o
+    0x10003cf4   0x00000190   Code   RO          954    CODE.ATIC172_WFC    App_Acq_Acceleration.o
+    0x10003e84   0x000000b8   Code   RO          993    CODE.ATIC172_WFC    App_Acq_Voltage.o
+    0x10003f3c   0x0000007c   Code   RO         1028    CODE.ATIC172_WFC    App_Delta.o
+    0x10003fb8   0x00000048   Code   RO         1069    CODE.ATIC172_WFC    App_Delta_Angle.o
+    0x10004000   0x0000009c   Code   RO         1105    CODE.ATIC172_WFC    App_Delta_Motion.o
+    0x1000409c   0x0000029c   Code   RO         1138    CODE.ATIC172_WFC    App_Delta_Pressure.o
+    0x10004338   0x0000003c   Code   RO         1175    CODE.ATIC172_WFC    App_Delta_Battery.o
+    0x10004374   0x00000068   Code   RO         1208    CODE.ATIC172_WFC    App_LF.o
+    0x100043dc   0x000001f0   Code   RO         1242    CODE.ATIC172_WFC    App_LF_Command.o
+    0x100045cc   0x00000200   Code   RO         1277    CODE.ATIC172_WFC    App_Mode.o
+    0x100047cc   0x00000250   Code   RO         1325    CODE.ATIC172_WFC    App_Mode_Actions.o
+    0x10004a1c   0x00000002   Code   RO         1363    CODE.ATIC172_WFC    App_Mode_History.o
+    0x10004a1e   0x00000002   PAD
+    0x10004a20   0x000000b8   Code   RO         1386    CODE.ATIC172_WFC    App_Mode_Reset.o
+    0x10004ad8   0x00000140   Code   RO         1415    CODE.ATIC172_WFC    App_Mode_Diag.o
+    0x10004c18   0x00000044   Code   RO         1450    CODE.ATIC172_WFC    App_RF.o
+    0x10004c5c   0x00000698   Code   RO         1481    CODE.ATIC172_WFC    App_RF_Request.o
+    0x100052f4   0x00000020   Code   RO         1527    CODE.ATIC172_WFC    App_RF_Data.o
+    0x10005314   0x0000001a   Code   RO          896    i.__ARM_common_switch8  App_Acq_Pressure.o
+    0x1000532e   0x00000002   PAD
+    0x10005330   0x00000020   Data   RO         1485    CONST.ATIC172_WFC   App_RF_Request.o
+
+
+
+  Load Region LR_FLASH_CONST_SWID (Base: 0x100053f0, Size: 0x0000000c, Max: 0x0000000c, ABSOLUTE)
+
+    Execution Region ER_FLASH_CONST_SWID (Base: 0x100053f0, Size: 0x0000000c, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x100053f0   0x00000002   Data   RO          763    CONST.SWID          Core_Keep_Flash.o
+    0x100053f2   0x00000001   Data   RO         1528    CONST.SWID          App_RF_Data.o
+    0x100053f3   0x00000001   Data   RO         1529    CONST.SWID          App_RF_Data.o
+    0x100053f4   0x00000007   Data   RO         1530    CONST.SWID          App_RF_Data.o
+
+
+
+  Load Region LR_FLASH_CODE_CRCLOCKBYTE (Base: 0x100053fc, Size: 0x00000004, Max: 0x00000004, ABSOLUTE)
+
+    Execution Region ER_FLASH_CODE_CRCLOCKBYTE (Base: 0x100053fc, Size: 0x00000004, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x100053fc   0x00000004   Data   RW            3    CODE_CRCLB          system_SP49.o
+
+
+
+  Load Region LR_VOLATILE_RAM (Base: 0x20000000, Size: 0x00000008, Max: 0x00000400, ABSOLUTE)
+
+    Execution Region ER_STACK (Base: 0x20000000, Size: 0x00000200, Max: 0xffffffff, ABSOLUTE, UNINIT)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000200   Zero   RW         1833    STACK               startup_SP49.o
+
+
+    Execution Region ER_STACK_GUARD (Base: 0x20000200, Size: 0x00000004, Max: 0xffffffff, ABSOLUTE, UNINIT)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000200   0x00000004   Zero   RW          187    STACK_GUARD         Core_Task_Events.o
+
+
+    Execution Region ER_RAM_CUST (Base: 0x20000204, Size: 0x000000b8, Max: 0xffffffff, ABSOLUTE, UNINIT)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000204   0x00000001   Data   RW         1487    RAM_0.ATIC172_WFC.8  App_RF_Request.o
+    0x20000205   0x00000001   PAD
+    0x20000206   0x00000004   Data   RW            5    UCS1_CRCLB          system_SP49.o
+    0x2000020a   0x00000002   PAD
+    0x2000020c   0x00000014   Zero   RW          703    RAM_0.ATIC172_WFC   Core_RF.o
+    0x20000220   0x00000006   Zero   RW          353    RAM_0.ATIC172_WFC.16  Core_Acq_Acceleration.o
+    0x20000226   0x00000002   Zero   RW          407    RAM_0.ATIC172_WFC.16  Core_Acq_Voltage.o
+    0x20000228   0x00000012   Zero   RW          440    RAM_0.ATIC172_WFC.16  Core_Ang.o
+    0x2000023a   0x00000018   Zero   RW          500    RAM_0.ATIC172_WFC.16  Core_TM_Interval.o
+    0x20000252   0x00000002   PAD
+    0x20000254   0x00000004   Zero   RW           51    RAM_0.ATIC172_WFC.32  Core_Task_Init.o
+    0x20000258   0x00000004   Zero   RW          186    RAM_0.ATIC172_WFC.32  Core_Task_Events.o
+    0x2000025c   0x00000008   Zero   RW          354    RAM_0.ATIC172_WFC.32  Core_Acq_Acceleration.o
+    0x20000264   0x00000004   Zero   RW          408    RAM_0.ATIC172_WFC.32  Core_Acq_Voltage.o
+    0x20000268   0x00000004   Zero   RW          616    RAM_0.ATIC172_WFC.32  Core_Diag_ATIC.o
+    0x2000026c   0x00000004   Zero   RW          704    RAM_0.ATIC172_WFC.32  Core_RF.o
+    0x20000270   0x00000008   Zero   RW         1279    RAM_0.ATIC172_WFC.32  App_Mode.o
+    0x20000278   0x00000001   Zero   RW          286    RAM_0.ATIC172_WFC.8  Core_Acq_Pressure.o
+    0x20000279   0x00000002   Zero   RW          324    RAM_0.ATIC172_WFC.8  Core_Acq_Temperature.o
+    0x2000027b   0x00000001   Zero   RW          355    RAM_0.ATIC172_WFC.8  Core_Acq_Acceleration.o
+    0x2000027c   0x00000001   Zero   RW          409    RAM_0.ATIC172_WFC.8  Core_Acq_Voltage.o
+    0x2000027d   0x00000003   Zero   RW          554    RAM_0.ATIC172_WFC.8  Core_TM_LPM.o
+    0x20000280   0x00000001   Zero   RW          675    RAM_0.ATIC172_WFC.8  Core_LF.o
+    0x20000281   0x00000022   Zero   RW          705    RAM_0.ATIC172_WFC.8  Core_RF.o
+    0x200002a3   0x00000001   Zero   RW          730    RAM_0.ATIC172_WFC.8  Core_Keep.o
+    0x200002a4   0x00000002   Zero   RW          879    RAM_0.ATIC172_WFC.8  App_Acq_Pressure.o
+    0x200002a6   0x00000001   Zero   RW          919    RAM_0.ATIC172_WFC.8  App_Acq_Temperature.o
+    0x200002a7   0x00000001   Zero   RW          958    RAM_0.ATIC172_WFC.8  App_Acq_Acceleration.o
+    0x200002a8   0x00000001   Zero   RW          996    RAM_0.ATIC172_WFC.8  App_Acq_Voltage.o
+    0x200002a9   0x00000001   Zero   RW         1328    RAM_0.ATIC172_WFC.8  App_Mode_Actions.o
+    0x200002aa   0x00000010   Zero   RW         1488    RAM_0.ATIC172_WFC.8  App_RF_Request.o
+
+
+
+  Load Region LR_RETENTION_RAM (Base: 0x30000000, Size: 0x00000094, Max: 0x000000c0, ABSOLUTE)
+
+    Execution Region ER_NVRAM_1 (Base: 0x30000000, Size: 0x00000084, Max: 0xffffffff, ABSOLUTE, UNINIT)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x30000000   0x00000001   Data   RW          793    NVRAM_1.NV1_Marker  Core_Keep_NVRAM.o
+    0x30000001   0x00000001   PAD
+    0x30000002   0x00000002   Data   RW          284    NVRAM_1.ATIC172_WFC.16  Core_Acq_Pressure.o
+    0x30000004   0x00000004   Data   RW          322    NVRAM_1.ATIC172_WFC.16  Core_Acq_Temperature.o
+    0x30000008   0x00000004   Data   RW          498    NVRAM_1.ATIC172_WFC.16  Core_TM_Interval.o
+    0x3000000c   0x00000006   Data   RW          553    NVRAM_1.ATIC172_WFC.16  Core_TM_LPM.o
+    0x30000012   0x00000002   Data   RW          877    NVRAM_1.ATIC172_WFC.16  App_Acq_Pressure.o
+    0x30000014   0x00000004   Data   RW          917    NVRAM_1.ATIC172_WFC.16  App_Acq_Temperature.o
+    0x30000018   0x00000004   Data   RW          955    NVRAM_1.ATIC172_WFC.16  App_Acq_Acceleration.o
+    0x3000001c   0x00000002   Data   RW          994    NVRAM_1.ATIC172_WFC.16  App_Acq_Voltage.o
+    0x3000001e   0x00000002   Data   RW         1805    NVRAM_1.ATIC172_WFC.16  Cfg_Types.o
+    0x30000020   0x00000004   Data   RW          285    NVRAM_1.ATIC172_WFC.32  Core_Acq_Pressure.o
+    0x30000024   0x00000004   Data   RW          323    NVRAM_1.ATIC172_WFC.32  Core_Acq_Temperature.o
+    0x30000028   0x00000004   Data   RW          583    NVRAM_1.ATIC172_WFC.32  Core_Diag.o
+    0x3000002c   0x00000004   Data   RW         1326    NVRAM_1.ATIC172_WFC.32  App_Mode_Actions.o
+    0x30000030   0x00000004   Data   RW         1416    NVRAM_1.ATIC172_WFC.32  App_Mode_Diag.o
+    0x30000034   0x00000001   Data   RW          439    NVRAM_1.ATIC172_WFC.8  Core_Ang.o
+    0x30000035   0x00000001   Data   RW          645    NVRAM_1.ATIC172_WFC.8  Core_Diag_Platform.o
+    0x30000036   0x00000001   Data   RW          674    NVRAM_1.ATIC172_WFC.8  Core_LF.o
+    0x30000037   0x00000003   Data   RW          878    NVRAM_1.ATIC172_WFC.8  App_Acq_Pressure.o
+    0x3000003a   0x00000003   Data   RW          918    NVRAM_1.ATIC172_WFC.8  App_Acq_Temperature.o
+    0x3000003d   0x00000003   Data   RW          956    NVRAM_1.ATIC172_WFC.8  App_Acq_Acceleration.o
+    0x30000040   0x00000001   Data   RW          995    NVRAM_1.ATIC172_WFC.8  App_Acq_Voltage.o
+    0x30000041   0x00000003   Data   RW         1070    NVRAM_1.ATIC172_WFC.8  App_Delta_Angle.o
+    0x30000044   0x00000001   Data   RW         1106    NVRAM_1.ATIC172_WFC.8  App_Delta_Motion.o
+    0x30000045   0x00000004   Data   RW         1139    NVRAM_1.ATIC172_WFC.8  App_Delta_Pressure.o
+    0x30000049   0x00000002   Data   RW         1176    NVRAM_1.ATIC172_WFC.8  App_Delta_Battery.o
+    0x3000004b   0x00000001   Data   RW         1245    NVRAM_1.ATIC172_WFC.8  App_LF_Command.o
+    0x3000004c   0x00000004   Data   RW         1278    NVRAM_1.ATIC172_WFC.8  App_Mode.o
+    0x30000050   0x00000002   Data   RW         1327    NVRAM_1.ATIC172_WFC.8  App_Mode_Actions.o
+    0x30000052   0x00000002   Data   RW         1417    NVRAM_1.ATIC172_WFC.8  App_Mode_Diag.o
+    0x30000054   0x00000006   Data   RW         1486    NVRAM_1.ATIC172_WFC.8  App_RF_Request.o
+    0x3000005a   0x00000011   Data   RW         1531    NVRAM_1.ATIC172_WFC.8  App_RF_Data.o
+    0x3000006b   0x00000001   Data   RW         1806    NVRAM_1.ATIC172_WFC.8  Cfg_Types.o
+    0x3000006c   0x00000018   Zero   RW          499    NVRAM_1.ATIC172_WFC.16  Core_TM_Interval.o
+
+
+    Execution Region ER_RET_RAM_CUST (Base: 0x30000084, Size: 0x00000004, Max: 0xffffffff, ABSOLUTE, UNINIT, FIXED)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x30000084   0x00000002   Data   RW          792    NVRAM_1.NV1_Checksum  Core_Keep_NVRAM.o
+    0x30000086   0x00000001   Data   RW          795    NVRAM_2.NV2_Marker  Core_Keep_NVRAM.o
+
+
+    Execution Region ER_NVRAM_2 (Base: 0x30000088, Size: 0x0000000c, Max: 0xffffffff, ABSOLUTE, UNINIT)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x30000088   0x00000004   Data   RW         1387    NVRAM_2.ATIC172_WFC.32  App_Mode_Reset.o
+    0x3000008c   0x00000001   Data   RW          185    NVRAM_2.ATIC172_WFC.8  Core_Task_Events.o
+    0x3000008d   0x00000001   Data   RW          957    NVRAM_2.ATIC172_WFC.8  App_Acq_Acceleration.o
+    0x3000008e   0x00000002   Data   RW         1246    NVRAM_2.ATIC172_WFC.8  App_LF_Command.o
+    0x30000090   0x00000001   Data   RW         1418    NVRAM_2.ATIC172_WFC.8  App_Mode_Diag.o
+    0x30000091   0x00000001   PAD
+    0x30000092   0x00000002   Data   RW          794    NVRAM_2.NV2_Checksum  Core_Keep_NVRAM.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       452        110          0          1          0       1211   App_Acq.o
+       400         88          0          8          1       3784   App_Acq_Acceleration.o
+       558         98          0          5          2       3806   App_Acq_Pressure.o
+       472         62          0          7          1       3841   App_Acq_Temperature.o
+       184         46          0          3          1       2474   App_Acq_Voltage.o
+       124         44          0          0          0        706   App_Delta.o
+        72          8          0          3          0       1158   App_Delta_Angle.o
+        60         16          0          2          0       1859   App_Delta_Battery.o
+       156         28          0          1          0        930   App_Delta_Motion.o
+       668        104          0          4          0       2472   App_Delta_Pressure.o
+       104         10          0          0          0       1397   App_LF.o
+       496         44        180          3          0       6987   App_LF_Command.o
+       512         70          0          4          8       3375   App_Mode.o
+       592         72          0          6          1       3119   App_Mode_Actions.o
+       320         30          0          7          0       2917   App_Mode_Diag.o
+         2          0          0          0          0        482   App_Mode_History.o
+       184         30          0          4          0       2351   App_Mode_Reset.o
+        68         20          0          0          0        497   App_RF.o
+        32          4          9         17          0       2714   App_RF_Data.o
+      2024        294        166          7         16      15846   App_RF_Request.o
+         0          0        571          6          0      14278   Cfg_Types.o
+       228         74          0          0          0        603   Core_Acq.o
+       992         68          0          0         15      11736   Core_Acq_Acceleration.o
+         4          0          0          0          0        631   Core_Acq_ExternalWakeup.o
+       252         26          0          6          1       4010   Core_Acq_Pressure.o
+       172         16          0          8          2       3568   Core_Acq_Temperature.o
+        92         12          0          0          7       2277   Core_Acq_Voltage.o
+      1284         68         12          1         18       4811   Core_Ang.o
+       168         22          0          4          0       2450   Core_Diag.o
+       240         18          0          0          4       2875   Core_Diag_ATIC.o
+       400         58          0          1          0       3157   Core_Diag_Platform.o
+       140         10          0          0          1       2107   Core_Keep.o
+       320         24          2          4          0       3266   Core_Keep_Flash.o
+       208         20          0          6          0       1766   Core_Keep_NVRAM.o
+      1244         58          0          1          1       7230   Core_LF.o
+      1028        114          0          0         58      10420   Core_RF.o
+       272         24          0          0          0       2881   Core_TM.o
+       380         22          0          0          0       3586   Core_TM_Delay.o
+       360         30          0          4         48       3805   Core_TM_Interval.o
+       348         24          0          6          3       3649   Core_TM_LPM.o
+       228         26          0          1          8       5139   Core_Task_Events.o
+        96         20          0          0          4       6632   Core_Task_Init.o
+         8          4          0          0        512        284   startup_SP49.o
+         0          0         32         12          0       7823   system_SP49.o
+
+    ----------------------------------------------------------------------
+     15948       1916       1024       1376        716     170910   Object Totals
+         0          0         48          0          0          0   (incl. Generated)
+         4          0          4       1234          4          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         8          0          0          0          0        472   Lib_Calib_GP_Timer.o
+        12          4          0          0          0        488   Lib_Calib_LF_OnOff_Timer.o
+         8          0          0          0          0        476   Lib_Calib_Precounter.o
+         8          0          0          0          0        484   Lib_Calib_Sample_Timer.o
+         8          0          0          0          0        476   Lib_Comp_Acceleration.o
+         8          0          0          0          0        488   Lib_Comp_Auto_Acc_Offset.o
+         8          0          0          0          0        500   Lib_Comp_OnDemand_Acc_Offset.o
+         8          0          0          0          0        464   Lib_Comp_Pressure.o
+         8          0          0          0          0        500   Lib_Comp_Reverse_Acceleration.o
+         8          0          0          0          0        488   Lib_Comp_Reverse_Pressure.o
+         8          0          0          0          0        472   Lib_Diag_ADC_Check.o
+        12          4          0          0          0        472   Lib_Diag_RC_Osc_Chk.o
+         8          0          0          0          0        476   Lib_Fl_Change_UCS_Line.o
+         8          0          0          0          0        488   Lib_LF_Carrier_Mode_Config.o
+         8          0          0          0          0        480   Lib_LF_Data_Mode_Config.o
+         8          0          0          0          0        476   Lib_LF_Data_Reception.o
+         8          0          0          0          0        476   Lib_Math_CRC16_Check.o
+         8          0          0          0          0        472   Lib_Math_CRC8_Calc.o
+         8          0          0          0          0        496   Lib_Math_Format_Measurement.o
+         8          0          0          0          0        460   Lib_Math_Median.o
+         8          0          0          0          0        472   Lib_Math_Random_Gen.o
+         8          0          0          0          0        452   Lib_Math_SQRT.o
+        12          4          0          0          0        464   Lib_Meas_Acc_FIR.o
+         8          0          0          0          0        476   Lib_Meas_Comp_SupplyV.o
+         8          0          0          0          0        472   Lib_Meas_Comp_Temp.o
+         8          0          0          0          0        476   Lib_Meas_Fast_Sample.o
+         8          0          0          0          0        476   Lib_Meas_MEIF_Config.o
+         8          0          0          0          0        488   Lib_Meas_Raw_Acceleration.o
+         8          0          0          0          0        476   Lib_Meas_Raw_Pressure.o
+        44          8          0          0          0        476   Lib_RF_Config_Add.o
+        12          4          0          0          0        468   Lib_RF_Config_Basic.o
+         8          0          0          0          0        480   Lib_RF_Start_Init_Delay.o
+         8          0          0          0          0        452   Lib_RF_Testing.o
+         8          0          0          0          0        476   Lib_RF_Transmit_Frame.o
+         8          0          0          0          0        464   Lib_RF_VCO_Tuning.o
+         8          0          0          0          0        472   Lib_Serv_Hard_Fault.o
+         8          0          0          0          0        500   Lib_Serv_Init_Interval_Timer.o
+        28          6          0          0          0        472   Lib_Serv_Read_ID.o
+         8          0          0          0          0        484   Lib_Serv_Start_Xtal_Osc.o
+         8          0          0          0          0        484   Lib_Serv_Stop_Xtal_Osc.o
+        12          4          0          0          0        476   Lib_State_LPM_Config.o
+         8          0          0          0          0        472   Lib_State_LPM_Start.o
+         8          0          0          0          0        472   Lib_State_Low_Power.o
+         8          0          0          0          0        496   Lib_State_Thermal_Shutdown.o
+        58          0          0          0          0          0   __dczerorl.o
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        40          0          0          0          0         72   idiv.o
+        36          8          0          0          0         68   init.o
+        26          0          0          0          0         72   memcmp.o
+        36          0          0          0          0         60   memcpya.o
+        36          0          0          0          0        100   memseta.o
+        44          0          0          0          0         72   uidiv.o
+
+    ----------------------------------------------------------------------
+       760         50          0          0          0      21444   Library Totals
+         6          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       428         34          0          0          0      21000   SP49_Library.lib
+       326         16          0          0          0        444   mc_p.l
+
+    ----------------------------------------------------------------------
+       760         50          0          0          0      21444   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     16708       1966       1024       1376        716     188142   Grand Totals
+     16708       1966       1024       1376        716     188142   ELF Image Totals
+     16708       1966       1024       1376          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                17732 (  17.32kB)
+    Total RW  Size (RW Data + ZI Data)              2092 (   2.04kB)
+    Total ROM Size (Code + RO Data + RW Data)      19108 (  18.66kB)
+
+==============================================================================
+
