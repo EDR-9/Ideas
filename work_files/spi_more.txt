@@ -490,3 +490,55 @@ TWCR = (1 << TWINT) | (1 << TWEN) | (1 << TWEA);
 The bitwise operations in the SPI and I2C programs are used to manipulate control and status registers in the microcontroller. They enable us to enable/disable specific features (like SPI master mode, I2C start conditions) by directly manipulating the bits in the registers. This approach is common in low-level embedded programming, where you need precise control over hardware features without affecting other settings.
 
 Let me know if you want more clarification on any specific part!
+
+***************************************************************************************************************************************
+
+Awesome to hear that you solved the issue! Now, to verify and ensure the correct **CPOL (Clock Polarity)** and **CPHA (Clock Phase)** configurations, here are some steps to follow:
+
+### 1. **Understand the CPOL and CPHA Settings**
+   - **CPOL (Clock Polarity)** determines the idle state of the clock:
+     - **CPOL = 0**: The clock is low when idle.
+     - **CPOL = 1**: The clock is high when idle.
+   - **CPHA (Clock Phase)** determines when data is sampled and shifted:
+     - **CPHA = 0**: Data is sampled on the leading edge of the clock (when the clock transitions from low to high).
+     - **CPHA = 1**: Data is sampled on the trailing edge of the clock (when the clock transitions from high to low).
+
+   The two values combine to form four different SPI modes:
+   - **Mode 0**: CPOL = 0, CPHA = 0
+   - **Mode 1**: CPOL = 0, CPHA = 1
+   - **Mode 2**: CPOL = 1, CPHA = 0
+   - **Mode 3**: CPOL = 1, CPHA = 1
+
+### 2. **Check the Flash Memory Datasheet**
+   - The **datasheet** for your flash memory will specify the correct SPI mode to use. Typically, it will tell you which **CPOL** and **CPHA** values are expected for proper communication.
+   - Find the section related to **SPI timing** or **interface details**; it should list the SPI mode.
+
+### 3. **Verify Microcontroller Settings**
+   - On the microcontroller, check the configuration registers or API calls (depending on your environment) that set up the SPI peripheral.
+     - **In STM32**: You would typically set the SPI mode in the `SPI_CR1` register.
+     - **In Arduino**: You can use `SPI.begin()` to configure, but you can also use `SPI.setDataMode(SPI_MODE0)` to explicitly set the SPI mode (where `SPI_MODE0` corresponds to CPOL = 0, CPHA = 0, etc.).
+   - Ensure that the microcontroller is configured to the same **SPI mode** as the flash memory.
+
+### 4. **Use a Logic Analyzer or Oscilloscope**
+   - If you're unsure about the configuration, the best way to check is to capture the signals on the **SCK** (clock) and **MISO** (data) lines with a **logic analyzer** or **oscilloscope**.
+   - Look at the following:
+     - **Clock polarity**: When the clock is idle (SCK high or low) to determine **CPOL**.
+     - **Data sampling**: Observe the data being sent. If it's being sampled on the rising edge or falling edge of the clock, you can determine **CPHA**.
+
+   Example:
+   - If the clock is **low** when idle and data changes on the **rising edge**, you’re in **Mode 0** (CPOL = 0, CPHA = 0).
+   - If the clock is **low** when idle and data changes on the **falling edge**, you’re in **Mode 1** (CPOL = 0, CPHA = 1).
+   - If the clock is **high** when idle and data changes on the **rising edge**, you’re in **Mode 2** (CPOL = 1, CPHA = 0).
+   - If the clock is **high** when idle and data changes on the **falling edge**, you’re in **Mode 3** (CPOL = 1, CPHA = 1).
+
+### 5. **Test Communication by Sending Known Data**
+   - Another way to verify the settings is to send known data or commands and check the response. For example, if you're reading from the flash memory, try reading the same location in memory multiple times and observe if the response is consistent. Incorrect **CPOL/CPHA** settings will result in corrupted data or no data at all.
+
+### 6. **Check the Timing Waveforms**
+   - If you’re using a tool like an oscilloscope, capture the SPI transaction and check the timing diagrams:
+     - Are the data bits changing in sync with the clock edges?
+     - Do the data transitions align with the clock polarity and phase described in the datasheet?
+
+Once you have these checks done, you'll know if the **CPOL** and **CPHA** settings are correctly configured and whether they match the flash memory's required settings.
+
+Let me know how it goes!
