@@ -1,0 +1,63 @@
+Is it possible to detect automaically the serial port (COM port) in which a device is connected? For example, some device is assigned to COM4 in one computer but when it's connected to another computer the port is COM10 now, and the program must be able to detect device in both cases
+
+Yes, it's definitely possible to automatically detect the serial port (COM port) in which a device is connected, regardless of whether it's COM4, COM10, or any other port. Here's how you can achieve that:
+
+### Steps to Detect Serial Port Automatically:
+
+1. **List all available serial ports**: 
+   You can use a programmatic approach to scan and list all available COM ports on the system. This can be done by querying the operating system for all serial ports.
+
+2. **Try to identify the device**:
+   Once you have the list of available COM ports, you can open each one and attempt to communicate with the device connected to it. Typically, you'll use a known identifier such as a specific baud rate, a response to a command, or any unique characteristic of the device that can help you recognize it.
+
+3. **Example Tools & Libraries**:
+   - **Python**: The `pyserial` library can be used to list all available serial ports. Once the ports are listed, you can attempt communication on each port and identify the device.
+   - **Windows**: On Windows, you can list COM ports through device management or by using the Windows API.
+   - **Linux**: On Linux, serial ports are usually available as `/dev/ttyUSB0`, `/dev/ttyACM0`, etc., and can be queried via commands like `dmesg` or `ls /dev/tty*`.
+
+### Example Code with Python (`pyserial`):
+
+```python
+import serial.tools.list_ports
+
+def find_device():
+    ports = serial.tools.list_ports.comports()
+    for port in ports:
+        try:
+            # Try to open the port
+            ser = serial.Serial(port.device, baudrate=9600, timeout=1)
+            # Send a command to the device and see if you get a response (optional)
+            # For example, you can check if the device returns something specific
+            ser.write(b'ping')
+            response = ser.readline()
+            if response == b'expected_response':  # Modify based on your device's response
+                print(f"Device found on {port.device}")
+                return port.device
+            ser.close()
+        except serial.SerialException:
+            continue
+
+    print("Device not found on any port.")
+    return None
+
+device_port = find_device()
+if device_port:
+    print(f"Device is connected to {device_port}")
+else:
+    print("No device detected.")
+```
+
+### Explanation:
+- **`serial.tools.list_ports.comports()`**: This will list all the available serial ports on the system.
+- **`ser.write(b'ping')`**: Send a command to the device to check for a response.
+- **`ser.readline()`**: Read the response from the device (if any).
+- **Device identification**: Based on the response from the device (which should be unique to the device you're targeting), you can identify which port it’s connected to.
+
+### Alternative: Using Windows Device Manager API (for Windows) or `dmesg`/`ls` on Linux.
+
+For a more robust solution, you can query the OS directly:
+- On **Windows**, you can use the Windows Management Instrumentation (WMI) to list all COM ports and their associated devices.
+- On **Linux**, you can parse `dmesg` logs or check `/dev/tty*` to identify devices.
+
+### Conclusion:
+By scanning through the available serial ports and attempting to communicate with each, you can programmatically detect which port your device is connected to, no matter what COM port it gets assigned on different systems.
