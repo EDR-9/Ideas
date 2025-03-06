@@ -1,0 +1,33 @@
+X macros in C are a technique that leverages the C preprocessor to maintain parallel lists of data or code in a consistent and reliable manner. They are particularly useful for generating list-like structures such as initialization of arrays, declarations of enumeration constants, and function prototypes, ensuring that corresponding items are declared or executed in the same order.
+The basic structure of an X macro involves defining a list of elements and then expanding this list to generate fragments of declarations or statements. For example, an enumeration can be defined using an X macro as follows:
+
+#define DEFINE_ENUMERATION(id, name, ...) name = id,
+enum my_id_list_type {
+    FOR_LIST_OF_VARIABLES( DEFINE_ENUMERATION )
+}
+
+This method not only defines an enumeration but also allows for the generation of functions that can print the variables and their names, among other uses.
+X macros are beneficial for reducing coding errors and improving developer productivity through automatic code generation. They are especially useful when dealing with function pointers and ensuring that code ordering dependencies are maintained.
+Examples of X macros include their use in creating rich enumerations that support iteration and string representation of enum values.
+
+#define MOUSE_BUTTONS \
+X(LeftButton, 1)   \
+X(MiddleButton, 2) \
+X(RightButton, 4)
+
+struct MouseButton {
+  enum Value {
+    None = 0
+#define X(name, value) ,name = value
+MOUSE_BUTTONS
+#undef X
+  };
+};
+
+In this example, the X macro is used to define an enum and generate functions to iterate over the enum values and retrieve their string representations.
+
+References:
+https://stackoverflow.com/questions/14351971/what-does-x-inside-a-c-macro-mean
+https://stackoverflow.com/questions/6635851/real-world-use-of-x-macros
+https://www.embedded.com/reduce-c-language-coding-errors-with-x-macros-part-1/
+https://www.codementor.io/@shaibenshalom/x-macros-rtmfceex4
